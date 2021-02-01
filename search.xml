@@ -38,6 +38,18 @@
       </categories>
   </entry>
   <entry>
+    <title>P1421 小玉买文具</title>
+    <url>/2021/02/01/P1421%E5%B0%8F%E7%8E%89%E4%B9%B0%E6%96%87%E5%85%B7/</url>
+    <content><![CDATA[<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">   <span class="keyword">int</span> a,b,c,d;</span><br><span class="line">   <span class="built_in">cin</span>&gt;&gt;a&gt;&gt;b;     <span class="comment">//输入</span></span><br><span class="line">   c=a*<span class="number">10</span>+b;      <span class="comment">//a以元为单位，b以角为单位，用c将它们统一单位成角，这样便于处理</span></span><br><span class="line">   d=c/<span class="number">19</span>;        <span class="comment">//用d存放能买到的签字笔的支数</span></span><br><span class="line">   <span class="built_in">cout</span>&lt;&lt;d;       <span class="comment">//输出</span></span><br><span class="line">   <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<a id="more"></a>
+
+<p>这题十分简单，解释都在注释里写过了。唯一需要注意的一点是C++里的除法默认为整除，所以不用担心小数的问题。</p>
+]]></content>
+      <categories>
+        <category>题解</category>
+      </categories>
+  </entry>
+  <entry>
     <title>P1001 A+B Problem</title>
     <url>/2021/02/01/P1001A+BProblem/</url>
     <content><![CDATA[<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt; //头文件</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;<span class="comment">//命名空间</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span>          <span class="comment">//主函数  </span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> a,b;        <span class="comment">//int定义a和b</span></span><br><span class="line">	<span class="built_in">cin</span>&gt;&gt;a&gt;&gt;b;      <span class="comment">//输入a和b</span></span><br><span class="line">	<span class="built_in">cout</span>&lt;&lt;a+b&lt;&lt;<span class="built_in">endl</span>;<span class="comment">//利用加号运算符将a和b加在一起并输出、换行</span></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;       <span class="comment">//主函数返回0（表示程序正常运行结束）</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -53,6 +65,8 @@
     <title>浣溪沙·电脑编程刷题</title>
     <url>/2021/02/01/%E6%B5%A3%E6%BA%AA%E6%B2%99%C2%B7%E7%94%B5%E8%84%91%E7%BC%96%E7%A8%8B%E5%88%B7%E9%A2%98/</url>
     <content><![CDATA[<p>学习电脑编程，中遇难题，赋词一首：</p>
+<a id="more"></a>
+
 <p>山下师父要AC，总是WA TLE，有时还有MLE。</p>
 <p>谁道人生无CE，测试点全部RE，休将白发唱难题！</p>
 ]]></content>
@@ -64,6 +78,8 @@
     <title>西江月·夜里写作业</title>
     <url>/2021/02/01/%E8%A5%BF%E6%B1%9F%E6%9C%88%C2%B7%E5%A4%9C%E9%87%8C%E5%86%99%E4%BD%9C%E4%B8%9A/</url>
     <content><![CDATA[<p>明月别枝惊鹊，作业写到半夜。</p>
+<a id="more"></a>
+
 <p>稻花香里说丰年，一篇作文写两年。</p>
 <p>七八篇作文像座塔，两三本练习写到傻。</p>
 <p>旧时茅厕马桶边，作文练习堆上天！</p>
@@ -77,6 +93,8 @@
     <url>/2021/02/01/%E9%95%BF%E6%81%A8%E6%AD%8C%C2%B7%E4%BD%9C%E6%96%87%E9%9A%BE/</url>
     <content><![CDATA[<p>（词前小序）作文乃奇难之物，因难之又难，遂赋词一首：</p>
 <p>作文难，难于上青天。</p>
+<a id="more"></a>
+
 <p>醉翁之意不在酒，一写作文手就抖。</p>
 <p>桃花潭水深千尺，写作文费十张纸。</p>
 <p>春潮带雨晚来急，作文难写真着急。</p>
@@ -104,18 +122,6 @@
 ]]></content>
       <categories>
         <category>创作（瞎搞）</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>P1421 小玉买文具</title>
-    <url>/2021/02/01/P1421%E5%B0%8F%E7%8E%89%E4%B9%B0%E6%96%87%E5%85%B7/</url>
-    <content><![CDATA[<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">   <span class="keyword">int</span> a,b,c,d;</span><br><span class="line">   <span class="built_in">cin</span>&gt;&gt;a&gt;&gt;b;     <span class="comment">//输入</span></span><br><span class="line">   c=a*<span class="number">10</span>+b;      <span class="comment">//a以元为单位，b以角为单位，用c将它们统一单位成角，这样便于处理</span></span><br><span class="line">   d=c/<span class="number">19</span>;        <span class="comment">//用d存放能买到的签字笔的支数</span></span><br><span class="line">   <span class="built_in">cout</span>&lt;&lt;d;       <span class="comment">//输出</span></span><br><span class="line">   <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<a id="more"></a>
-
-<p>这题十分简单，解释都在注释里写过了。唯一需要注意的一点是C++里的除法默认为整除，所以不用担心小数的问题。</p>
-]]></content>
-      <categories>
-        <category>题解</category>
       </categories>
   </entry>
 </search>
