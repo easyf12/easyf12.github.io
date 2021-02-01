@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-02-01T12:59:41.140Z</updated>
+  <updated>2021-02-01T13:03:22.334Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://example.com/2021/02/01/P1421%E5%B0%8F%E7%8E%89%E4%B9%B0%E6%96%87%E5%85%B7/"/>
     <id>http://example.com/2021/02/01/P1421%E5%B0%8F%E7%8E%89%E4%B9%B0%E6%96%87%E5%85%B7/</id>
     <published>2021-02-01T12:03:51.000Z</published>
-    <updated>2021-02-01T12:59:41.140Z</updated>
+    <updated>2021-02-01T13:03:22.334Z</updated>
     
     <content type="html"><![CDATA[<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">   <span class="keyword">int</span> a,b,c,d;</span><br><span class="line">   <span class="built_in">cin</span>&gt;&gt;a&gt;&gt;b;     <span class="comment">//输入</span></span><br><span class="line">   c=a*<span class="number">10</span>+b;      <span class="comment">//a以元为单位，b以角为单位，用c将它们统一单位成角，这样便于处理</span></span><br><span class="line">   d=c/<span class="number">19</span>;        <span class="comment">//用d存放能买到的签字笔的支数</span></span><br><span class="line">   <span class="built_in">cout</span>&lt;&lt;d;       <span class="comment">//输出</span></span><br><span class="line">   <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><a id="more"></a><p>这题十分简单，解释都在注释里写过了。唯一需要注意的一点是C++里的除法默认为整除，所以不用担心小数的问题。</p>]]></content>
     
