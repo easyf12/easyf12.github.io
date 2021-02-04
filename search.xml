@@ -9,6 +9,9 @@
       <categories>
         <category>创作（正经）</category>
       </categories>
+      <tags>
+        <tag>说明</tag>
+      </tags>
   </entry>
   <entry>
     <title>最难忘的回忆</title>
@@ -18,6 +21,9 @@
       <categories>
         <category>游记</category>
       </categories>
+      <tags>
+        <tag>圣人</tag>
+      </tags>
   </entry>
   <entry>
     <title>有意思的游戏</title>
@@ -32,6 +38,9 @@
       <categories>
         <category>创作（正经）</category>
       </categories>
+      <tags>
+        <tag>比赛</tag>
+      </tags>
   </entry>
   <entry>
     <title>有你，真好</title>
@@ -48,6 +57,9 @@
       <categories>
         <category>创作（正经）</category>
       </categories>
+      <tags>
+        <tag>友爱</tag>
+      </tags>
   </entry>
   <entry>
     <title>小区楼道管理倡议书</title>
@@ -79,6 +91,9 @@
       <categories>
         <category>倡议</category>
       </categories>
+      <tags>
+        <tag>倡议</tag>
+      </tags>
   </entry>
   <entry>
     <title>闲不住的奶奶</title>
@@ -91,6 +106,9 @@
       <categories>
         <category>创作（正经）</category>
       </categories>
+      <tags>
+        <tag>亲人</tag>
+      </tags>
   </entry>
   <entry>
     <title>下棋让生活更美好</title>
@@ -103,6 +121,9 @@
       <categories>
         <category>创作（正经）</category>
       </categories>
+      <tags>
+        <tag>爱好</tag>
+      </tags>
   </entry>
   <entry>
     <title>系红领巾大赛</title>
@@ -119,6 +140,9 @@
       <categories>
         <category>创作（正经）</category>
       </categories>
+      <tags>
+        <tag>红领巾</tag>
+      </tags>
   </entry>
   <entry>
     <title>我好想成长</title>
@@ -138,6 +162,9 @@
       <categories>
         <category>创作（正经）</category>
       </categories>
+      <tags>
+        <tag>成长</tag>
+      </tags>
   </entry>
   <entry>
     <title>我的拿手好戏</title>
@@ -153,6 +180,9 @@
       <categories>
         <category>创作（正经）</category>
       </categories>
+      <tags>
+        <tag>爱好</tag>
+      </tags>
   </entry>
   <entry>
     <title>难忘的画面</title>
@@ -166,6 +196,9 @@
       <categories>
         <category>创作（正经）</category>
       </categories>
+      <tags>
+        <tag>场面</tag>
+      </tags>
   </entry>
   <entry>
     <title>令人感动的画面</title>
@@ -180,6 +213,9 @@
       <categories>
         <category>创作（正经）</category>
       </categories>
+      <tags>
+        <tag>场面</tag>
+      </tags>
   </entry>
   <entry>
     <title>泪</title>
@@ -198,6 +234,9 @@
       <categories>
         <category>创作（正经）</category>
       </categories>
+      <tags>
+        <tag>泪</tag>
+      </tags>
   </entry>
   <entry>
     <title>发现</title>
@@ -214,6 +253,9 @@
       <categories>
         <category>创作（正经）</category>
       </categories>
+      <tags>
+        <tag>发现</tag>
+      </tags>
   </entry>
   <entry>
     <title>地球自述</title>
@@ -230,6 +272,9 @@
       <categories>
         <category>创作（正经）</category>
       </categories>
+      <tags>
+        <tag>地球</tag>
+      </tags>
   </entry>
   <entry>
     <title>春</title>
@@ -246,6 +291,9 @@
       <categories>
         <category>创作（正经）</category>
       </categories>
+      <tags>
+        <tag>小说</tag>
+      </tags>
   </entry>
   <entry>
     <title>成长路上，有你真好</title>
@@ -265,6 +313,9 @@
       <categories>
         <category>创作（正经）</category>
       </categories>
+      <tags>
+        <tag>成长</tag>
+      </tags>
   </entry>
   <entry>
     <title>成长</title>
@@ -287,6 +338,9 @@
       <categories>
         <category>创作（正经）</category>
       </categories>
+      <tags>
+        <tag>成长</tag>
+      </tags>
   </entry>
   <entry>
     <title>爱，就在我身边</title>
@@ -305,6 +359,9 @@
       <categories>
         <category>创作（正经）</category>
       </categories>
+      <tags>
+        <tag>友爱</tag>
+      </tags>
   </entry>
   <entry>
     <title>浣溪沙·电脑编程刷题</title>
@@ -318,6 +375,9 @@
       <categories>
         <category>创作（瞎搞）</category>
       </categories>
+      <tags>
+        <tag>C++</tag>
+      </tags>
   </entry>
   <entry>
     <title>长恨歌·作文难</title>
@@ -354,6 +414,9 @@
       <categories>
         <category>创作（瞎搞）</category>
       </categories>
+      <tags>
+        <tag>作文</tag>
+      </tags>
   </entry>
   <entry>
     <title>西江月·夜里写作业</title>
@@ -368,6 +431,9 @@
       <categories>
         <category>创作（瞎搞）</category>
       </categories>
+      <tags>
+        <tag>作业</tag>
+      </tags>
   </entry>
   <entry>
     <title>P1421 小玉买文具</title>
@@ -380,6 +446,9 @@
       <categories>
         <category>题解</category>
       </categories>
+      <tags>
+        <tag>C++</tag>
+      </tags>
   </entry>
   <entry>
     <title>P1000 超级玛丽游戏</title>
@@ -394,6 +463,9 @@
       <categories>
         <category>题解</category>
       </categories>
+      <tags>
+        <tag>C++</tag>
+      </tags>
   </entry>
   <entry>
     <title>P1001 A+B Problem</title>
@@ -406,6 +478,9 @@
       <categories>
         <category>题解</category>
       </categories>
+      <tags>
+        <tag>C++</tag>
+      </tags>
   </entry>
   <entry>
     <title>2019 CSP-J认证 复赛</title>
@@ -429,5 +504,8 @@
       <categories>
         <category>游记</category>
       </categories>
+      <tags>
+        <tag>比赛</tag>
+      </tags>
   </entry>
 </search>
