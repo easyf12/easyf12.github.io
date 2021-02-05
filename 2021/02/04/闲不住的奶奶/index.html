@@ -217,6 +217,10 @@
       </div>
   </nav>
 </div>
+  <div class="sidebar-button site-overview-item animated"><i class="comment"></i>
+    chat
+  </a>
+  </div>
   <div class="links-of-author site-overview-item animated">
       <span class="links-of-author-item">
         <a href="https://github.com/easyf12" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;easyf12" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
@@ -593,7 +597,6 @@ if(canvas.getContext){
 
         </div>
       </header>
-
     
     
     
@@ -604,7 +607,7 @@ if(canvas.getContext){
 <p>清晨，奶奶早早地起来，快速地刷牙洗脸，接着开始锻炼身体。“一二三四五六七八，二二三四五六七八，三二……”她围着客厅的茶几小跑着，呼吸均匀，两手前后稍稍摆动，跑得十分标准。过了一会儿，奶奶又开始练太极拳，柔中带刚，虽没有到出神入化的地步，倒有几副架势。<br>早上，该吃早饭了，奶奶开始做饭。她将锅接上水，并从架子上拿出西红柿，烧水的同时切好西红柿，接着熟练地将西红柿放进锅里，进行第一次翻炒。又拿出面条，将面条放进锅里，放些盐和葱，再进行第二次翻炒，短短十分钟就做成了美味的西红柿面。那时，奶奶脸上现出了几颗晶莹的汗珠。她捏了一把汗，满足地看着锅里的面条，似乎对自己做的面条十分满意。<br>吃完面后，你可能会以为奶奶会歇息一会儿，或看一会儿电视。那么你错了，奶奶可没这么轻易“败下阵来”，瞧，她又拿起了针和线，开始织毛衣了。只见她左一针，右一针，每一针都让你担心扎到手指，每一针却又缝得恰到好处。她越织越来劲，彻底地陶醉在其中。于是仅一根针，几团线，就创造出了一件又一件的漂亮的衣服。织完衣服，她又开始织一幅已经织了一半的《万马奔腾》。她还有宏伟设想，要靠她的双手织出更多的画在家里做装饰，甚至对外卖出。<br>到了中午，奶奶又要开始做饭了……<br>这就是我的奶奶，一个闲不住的奶奶。我想，这样闲不住的生活一定会很充实，美好……</p>
 
     </div>
-
+<script src="//code.tidio.co/iciizu5omoc2mbr2lraq9hndlgslj9a2.js" async></script>
     
     
     
@@ -633,6 +636,11 @@ if(canvas.getContext){
           </div>
 
         
+  <div class="post-widgets">
+    <div class="wp_rating">
+      <div id="wpac-rating"></div>
+    </div>
+  </div>
 
           <div class="post-nav">
             <div class="post-nav-item">
@@ -725,45 +733,6 @@ if(canvas.getContext){
       </span>
     </span>
 </div>
-<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.5/lib/darkmode-js.min.js"></script>
-<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
-<script>
-    var options = {
-        bottom: "32px",                 // default: '32px'
-        right: "32px",                  // default: '32px'
-        left: "unset",                  // default: 'unset'
-        time: "0.5s",                   // default: '0.3s'
-        mixColor: "#fff",               // default: '#fff'
-        backgroundColor: "#fff",        // default: '#fff'
-        buttonColorDark: "#262728",     // default: '#100f2c'
-        buttonColorLight: "#fff",       // default: '#fff'
-        saveInCookies: true,            // default: true,
-        label: "🌓",                    // default: ''
-        autoMatchOsTheme: true,         // default: true
-    };
-    let darkmode = new Darkmode(options);
-    darkmode.showWidget();
- 
-    $("document").ready(function () {
-        if (darkmode.isActivated()) {
-            document.getElementById("light-mode").style.display = "none";
-            document.getElementById("dark-mode").style.display = "flex";
-        } else {
-            document.getElementById("light-mode").style.display = "flex";
-            document.getElementById("dark-mode").style.display = "none";
-        }
-    });
- 
-    $(".darkmode-toggle").click(function () {
-        if (darkmode.isActivated()) {
-            document.getElementById("light-mode").style.display = "none";
-            document.getElementById("dark-mode").style.display = "flex";
-        } else {
-            document.getElementById("light-mode").style.display = "flex";
-            document.getElementById("dark-mode").style.display = "none";
-        }
-    });
-</script>
 <div class="translate-style">
 繁/简：<a id="translateLink" href="javascript:translatePage();">繁体
 </a>
@@ -772,7 +741,7 @@ if(canvas.getContext){
 <script type="text/javascript">
 var defaultEncoding = 2; //网站编写字体是否繁体，1-繁体，2-简体
 var translateDelay = 0; //延迟时间,若不在前, 要设定延迟翻译时间, 如100表示100ms,默认为0
-var cookieDomain = "https://tding.top/"; //Cookie地址, 一定要设定, 通常为你的网址
+var cookieDomain = "https://easyf12.github.io"; //Cookie地址, 一定要设定, 通常为你的网址
 var msgToTraditionalChinese = "繁体"; //此处可以更改为你想要显示的文字
 var msgToSimplifiedChinese = "简体"; //同上，但两处均不建议更改
 var translateButtonId = "translateLink"; //默认互换id
@@ -791,6 +760,26 @@ translateInitilization();
 <script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
 
   
+  <script>
+  if (CONFIG.page.isPost) {
+    wpac_init = window.wpac_init || [];
+    wpac_init.push({
+      widget: 'Rating',
+      id    : ,
+      el    : 'wpac-rating',
+      color : '#fc6423'
+    });
+    (function() {
+      if ('WIDGETPACK_LOADED' in window) return;
+      WIDGETPACK_LOADED = true;
+      var mc = document.createElement('script');
+      mc.type = 'text/javascript';
+      mc.async = true;
+      mc.src = '//embed.widgetpack.com/widget.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
+    })();
+  }
+  </script>
 <script src="/js/local-search.js"></script>
 
 

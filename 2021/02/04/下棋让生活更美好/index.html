@@ -217,6 +217,10 @@
       </div>
   </nav>
 </div>
+  <div class="sidebar-button site-overview-item animated"><i class="comment"></i>
+    chat
+  </a>
+  </div>
   <div class="links-of-author site-overview-item animated">
       <span class="links-of-author-item">
         <a href="https://github.com/easyf12" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;easyf12" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
@@ -593,7 +597,6 @@ if(canvas.getContext){
 
         </div>
       </header>
-
     
     
     
@@ -604,7 +607,7 @@ if(canvas.getContext){
 <p>刚念到成绩时，我的大脑一片空白。顿时，我的脑袋就像被炸了一样，眼泪如泉水涌了出来，80分的考卷如一座山压着我，令我无法呼吸。<br>回到家里，我头也不抬地写完了作业，泪水出现在每个角落。我绝望了，这是我人生中第一次遇到挫折。我用已经僵硬的手打开电脑，想要下盘棋转移注意力。我一开始只是漫无目的地挪动棋子，两眼失神，腿一直颤抖着，苍白的脸上没有一丝光泽，心中依然是无尽的悲伤。过了一会儿，我仿佛被赋予了生命，脑袋开始运转了起来，身体也能动了，浑身都有了力气，心里不再那么难受了。到了后来，我已经完全进入状态，将全身心投入到棋中，一点点悲伤也没有了。这小小的棋盘和棋子，仿佛有魔力一样，将我的灵魂带到了棋的世界里，快乐地漫游在其中。<br>在下棋的过程中，我受益良多：在这场游戏中，暂时的失利不代表永恒的失败，在比赛的任何时刻，你都有可能因为一步棋而失利，但是你也有机会再次夺回先机。考试也是如此，一次考试说明不了什么，人生的路很长，会遇到无数次考试，只要总体是好的，就是胜利了！<br>下完棋以后，我悲伤全无，还有一股隐形的力量鼓励我前行。短短的一盘棋使我得到了许多，这时的我已经不是一刻钟之前的我了。<br>棋，能令人投入进去，还能缓解情绪，更能告诉我们使人一生受用的道理！<br>我想，下棋，让生活更美好！</p>
 
     </div>
-
+<script src="//code.tidio.co/iciizu5omoc2mbr2lraq9hndlgslj9a2.js" async></script>
     
     
     
@@ -633,6 +636,11 @@ if(canvas.getContext){
           </div>
 
         
+  <div class="post-widgets">
+    <div class="wp_rating">
+      <div id="wpac-rating"></div>
+    </div>
+  </div>
 
           <div class="post-nav">
             <div class="post-nav-item">
@@ -725,45 +733,6 @@ if(canvas.getContext){
       </span>
     </span>
 </div>
-<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.5/lib/darkmode-js.min.js"></script>
-<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
-<script>
-    var options = {
-        bottom: "32px",                 // default: '32px'
-        right: "32px",                  // default: '32px'
-        left: "unset",                  // default: 'unset'
-        time: "0.5s",                   // default: '0.3s'
-        mixColor: "#fff",               // default: '#fff'
-        backgroundColor: "#fff",        // default: '#fff'
-        buttonColorDark: "#262728",     // default: '#100f2c'
-        buttonColorLight: "#fff",       // default: '#fff'
-        saveInCookies: true,            // default: true,
-        label: "🌓",                    // default: ''
-        autoMatchOsTheme: true,         // default: true
-    };
-    let darkmode = new Darkmode(options);
-    darkmode.showWidget();
- 
-    $("document").ready(function () {
-        if (darkmode.isActivated()) {
-            document.getElementById("light-mode").style.display = "none";
-            document.getElementById("dark-mode").style.display = "flex";
-        } else {
-            document.getElementById("light-mode").style.display = "flex";
-            document.getElementById("dark-mode").style.display = "none";
-        }
-    });
- 
-    $(".darkmode-toggle").click(function () {
-        if (darkmode.isActivated()) {
-            document.getElementById("light-mode").style.display = "none";
-            document.getElementById("dark-mode").style.display = "flex";
-        } else {
-            document.getElementById("light-mode").style.display = "flex";
-            document.getElementById("dark-mode").style.display = "none";
-        }
-    });
-</script>
 <div class="translate-style">
 繁/简：<a id="translateLink" href="javascript:translatePage();">繁体
 </a>
@@ -772,7 +741,7 @@ if(canvas.getContext){
 <script type="text/javascript">
 var defaultEncoding = 2; //网站编写字体是否繁体，1-繁体，2-简体
 var translateDelay = 0; //延迟时间,若不在前, 要设定延迟翻译时间, 如100表示100ms,默认为0
-var cookieDomain = "https://tding.top/"; //Cookie地址, 一定要设定, 通常为你的网址
+var cookieDomain = "https://easyf12.github.io"; //Cookie地址, 一定要设定, 通常为你的网址
 var msgToTraditionalChinese = "繁体"; //此处可以更改为你想要显示的文字
 var msgToSimplifiedChinese = "简体"; //同上，但两处均不建议更改
 var translateButtonId = "translateLink"; //默认互换id
@@ -791,6 +760,26 @@ translateInitilization();
 <script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
 
   
+  <script>
+  if (CONFIG.page.isPost) {
+    wpac_init = window.wpac_init || [];
+    wpac_init.push({
+      widget: 'Rating',
+      id    : ,
+      el    : 'wpac-rating',
+      color : '#fc6423'
+    });
+    (function() {
+      if ('WIDGETPACK_LOADED' in window) return;
+      WIDGETPACK_LOADED = true;
+      var mc = document.createElement('script');
+      mc.type = 'text/javascript';
+      mc.async = true;
+      mc.src = '//embed.widgetpack.com/widget.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
+    })();
+  }
+  </script>
 <script src="/js/local-search.js"></script>
 
 

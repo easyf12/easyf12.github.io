@@ -217,6 +217,10 @@
       </div>
   </nav>
 </div>
+  <div class="sidebar-button site-overview-item animated"><i class="comment"></i>
+    chat
+  </a>
+  </div>
   <div class="links-of-author site-overview-item animated">
       <span class="links-of-author-item">
         <a href="https://github.com/easyf12" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;easyf12" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
@@ -593,7 +597,6 @@ if(canvas.getContext){
 
         </div>
       </header>
-
     
     
     
@@ -606,7 +609,7 @@ if(canvas.getContext){
 <p>这一切，不都是爱的力量吗？爱，无影无形，却是世界上最美好的东西，它无时无刻不在我们身边，感化着我们每一个人，就如朋友和家人对我的关心一样。他们给了我爱，我也要将爱传给更多人，让世界都充满爱！</p>
 
     </div>
-
+<script src="//code.tidio.co/iciizu5omoc2mbr2lraq9hndlgslj9a2.js" async></script>
     
     
     
@@ -635,6 +638,11 @@ if(canvas.getContext){
           </div>
 
         
+  <div class="post-widgets">
+    <div class="wp_rating">
+      <div id="wpac-rating"></div>
+    </div>
+  </div>
 
           <div class="post-nav">
             <div class="post-nav-item">
@@ -727,45 +735,6 @@ if(canvas.getContext){
       </span>
     </span>
 </div>
-<script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.5/lib/darkmode-js.min.js"></script>
-<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
-<script>
-    var options = {
-        bottom: "32px",                 // default: '32px'
-        right: "32px",                  // default: '32px'
-        left: "unset",                  // default: 'unset'
-        time: "0.5s",                   // default: '0.3s'
-        mixColor: "#fff",               // default: '#fff'
-        backgroundColor: "#fff",        // default: '#fff'
-        buttonColorDark: "#262728",     // default: '#100f2c'
-        buttonColorLight: "#fff",       // default: '#fff'
-        saveInCookies: true,            // default: true,
-        label: "🌓",                    // default: ''
-        autoMatchOsTheme: true,         // default: true
-    };
-    let darkmode = new Darkmode(options);
-    darkmode.showWidget();
- 
-    $("document").ready(function () {
-        if (darkmode.isActivated()) {
-            document.getElementById("light-mode").style.display = "none";
-            document.getElementById("dark-mode").style.display = "flex";
-        } else {
-            document.getElementById("light-mode").style.display = "flex";
-            document.getElementById("dark-mode").style.display = "none";
-        }
-    });
- 
-    $(".darkmode-toggle").click(function () {
-        if (darkmode.isActivated()) {
-            document.getElementById("light-mode").style.display = "none";
-            document.getElementById("dark-mode").style.display = "flex";
-        } else {
-            document.getElementById("light-mode").style.display = "flex";
-            document.getElementById("dark-mode").style.display = "none";
-        }
-    });
-</script>
 <div class="translate-style">
 繁/简：<a id="translateLink" href="javascript:translatePage();">繁体
 </a>
@@ -774,7 +743,7 @@ if(canvas.getContext){
 <script type="text/javascript">
 var defaultEncoding = 2; //网站编写字体是否繁体，1-繁体，2-简体
 var translateDelay = 0; //延迟时间,若不在前, 要设定延迟翻译时间, 如100表示100ms,默认为0
-var cookieDomain = "https://tding.top/"; //Cookie地址, 一定要设定, 通常为你的网址
+var cookieDomain = "https://easyf12.github.io"; //Cookie地址, 一定要设定, 通常为你的网址
 var msgToTraditionalChinese = "繁体"; //此处可以更改为你想要显示的文字
 var msgToSimplifiedChinese = "简体"; //同上，但两处均不建议更改
 var translateButtonId = "translateLink"; //默认互换id
@@ -793,6 +762,26 @@ translateInitilization();
 <script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
 
   
+  <script>
+  if (CONFIG.page.isPost) {
+    wpac_init = window.wpac_init || [];
+    wpac_init.push({
+      widget: 'Rating',
+      id    : ,
+      el    : 'wpac-rating',
+      color : '#fc6423'
+    });
+    (function() {
+      if ('WIDGETPACK_LOADED' in window) return;
+      WIDGETPACK_LOADED = true;
+      var mc = document.createElement('script');
+      mc.type = 'text/javascript';
+      mc.async = true;
+      mc.src = '//embed.widgetpack.com/widget.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(mc, s.nextSibling);
+    })();
+  }
+  </script>
 <script src="/js/local-search.js"></script>
 
 
