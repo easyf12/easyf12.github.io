@@ -1750,15 +1750,6 @@ pre code {
   width: 100%;
   z-index: 1500;
 }
-.reading-progress-bar {
-  background: #37c6c0;
-  height: 3px;
-  left: 0;
-  position: fixed;
-  width: 0;
-  z-index: 1500;
-  top: 0;
-}
 .rtl.post-body p,
 .rtl.post-body a,
 .rtl.post-body h1,
@@ -2862,7 +2853,7 @@ hr {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #ff5bff;
+  background: #ffff9c;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2887,4 +2878,38 @@ hr {
 }
 .sub-menu .menu-item {
   display: inline-block;
+}
+.post-body>p:first-child::first-letter {
+  float: left;
+/* height: 32px;*/
+  margin-top: 14px;
+  margin-right: 6px;
+  color: #555;
+  font-size: 42px;
+  line-height: 28px;
+  font-style: normal;
+  font-weight: 400;
+}
+@media (max-width: 767px) {
+  .post-body>p:first-child::first-letter {
+    margin-top: 10px;
+    margin-right: 4px;
+    font-size: 26px;
+    line-height: 20px;
+  }
+}
+.back-to-top {
+  width: 70px;
+  height: 900px;
+  top: -900px;
+  bottom: unset;
+  transition: all 0.5s ease-in-out;
+  background: url("/images/scroll.jpg");
+}
+.back-to-top > i {
+  display: none;
+}
+.back-to-top.back-to-top-on {
+  bottom: unset;
+  top: calc(100vh - 900px - 200px);
 }
