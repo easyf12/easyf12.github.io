@@ -2853,7 +2853,7 @@ hr {
   vertical-align: middle;
 }
 .links-of-author a::before {
-  background: #ff94e5;
+  background: #1b6505;
   display: inline-block;
   margin-right: 3px;
   transform: translateY(-2px);
@@ -2912,4 +2912,11 @@ hr {
 .back-to-top.back-to-top-on {
   bottom: unset;
   top: calc(100vh - 900px - 200px);
+}
+/* 鼠标样式 */
+* {
+  cursor: url("/images/default.cur"), auto;
+}
+:link {
+  cursor: url("/images/pointer.cur"), auto;
 }
