@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2021-03-01T11:02:54.811Z</updated>
+  <updated>2021-03-01T14:09:14.346Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -21,12 +21,12 @@
     <link href="http://example.com/2021/03/01/Footprint/"/>
     <id>http://example.com/2021/03/01/Footprint/</id>
     <published>2021-03-01T11:00:58.000Z</published>
-    <updated>2021-03-01T11:02:54.811Z</updated>
+    <updated>2021-03-01T14:09:14.346Z</updated>
     
-    <content type="html"><![CDATA[<p>It’s the biggest snow this year. I go outside when it’s dark. Snow falls on my hand, then it becomes water. There are many footprints on the ground. The world is quiet, quiet, and quiet…</p><a id="more"></a><p>Suddenly, the sun rises up. Everything wakes up. It’s brighter and brighter now. The snow is beginning to melt. The footprints fade.</p><p>But I want to leave some footprints on the ground! I want the flowers, grasses, everything in the world can hear my voice!  </p><p>Let the world hear my voice…</p>]]></content>
+    <content type="html"><![CDATA[<p>It was the heaviest snow this year. I went out when it was dark outside. Snow fell on my hands, and then it became water. There were many footprints on the ground. The whole world was all quiet.</p><a id="more"></a><p>Suddenly, the sun rose up. Everything began to wake up. It became brighter and brighter now. The snow was melting. The footprints faded.</p><p>I wanted to leave some footprints on the ground! I wanted everything in the world, such as flowers, grasses, to hear my voice!</p><p>Let the world hear my voice…</p>]]></content>
     
     
-    <summary type="html">&lt;p&gt;It’s the biggest snow this year. I go outside when it’s dark. Snow falls on my hand, then it becomes water. There are many footprints on the ground. The world is quiet, quiet, and quiet…&lt;/p&gt;</summary>
+    <summary type="html">&lt;p&gt;It was the heaviest snow this year. I went out when it was dark outside. Snow fell on my hands, and then it became water. There were many footprints on the ground. The whole world was all quiet.&lt;/p&gt;</summary>
     
     
     
