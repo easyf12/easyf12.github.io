@@ -7,12 +7,12 @@
 <meta name="generator" content="Hexo 5.3.0">
 
 
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/e.ico">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/e.ico">
-  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <link rel="apple-touch-icon" sizes="180x180" href="hexo/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="hexo/images/e.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="hexo/images/e.ico">
+  <link rel="mask-icon" href="hexo/images/logo.svg" color="#222">
 
-<link rel="stylesheet" href="/css/main.css">
+<link rel="stylesheet" href="hexo/css/main.css">
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 
@@ -21,28 +21,28 @@
 
 <script class="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"example.com","root":"/","images":"/images","scheme":"Mist","version":"8.2.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
+    var CONFIG = {"hostname":"easyf12.gitee.io","root":"hexo/","images":"hexo/images","scheme":"Mist","version":"8.2.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"hexo/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
   </script>
 <meta name="description" content="题目网址 这题洛谷上归到暴力枚举了，但是我认为不用暴力枚举，用数学方法就可以解决。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="P2241 统计方形（数据加强版）">
-<meta property="og:url" content="http://example.com/2021/02/08/P2241%E7%BB%9F%E8%AE%A1%E6%96%B9%E5%BD%A2%EF%BC%88%E6%95%B0%E6%8D%AE%E5%8A%A0%E5%BC%BA%E7%89%88%EF%BC%89/index.html">
+<meta property="og:url" content="http://easyf12.gitee.io/blog/2021/02/08/P2241%E7%BB%9F%E8%AE%A1%E6%96%B9%E5%BD%A2%EF%BC%88%E6%95%B0%E6%8D%AE%E5%8A%A0%E5%BC%BA%E7%89%88%EF%BC%89/index.html">
 <meta property="og:site_name" content="easyf12&#39;s blog">
 <meta property="og:description" content="题目网址 这题洛谷上归到暴力枚举了，但是我认为不用暴力枚举，用数学方法就可以解决。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="http://example.com/2021/02/08/P2241%E7%BB%9F%E8%AE%A1%E6%96%B9%E5%BD%A2%EF%BC%88%E6%95%B0%E6%8D%AE%E5%8A%A0%E5%BC%BA%E7%89%88%EF%BC%89/Snipaste_2021-02-08_16-42-15.png">
-<meta property="og:image" content="http://example.com/2021/02/08/P2241%E7%BB%9F%E8%AE%A1%E6%96%B9%E5%BD%A2%EF%BC%88%E6%95%B0%E6%8D%AE%E5%8A%A0%E5%BC%BA%E7%89%88%EF%BC%89/%E6%AD%A3%E6%96%B9%E5%BD%A2.png">
-<meta property="og:image" content="http://example.com/2021/02/08/P2241%E7%BB%9F%E8%AE%A1%E6%96%B9%E5%BD%A2%EF%BC%88%E6%95%B0%E6%8D%AE%E5%8A%A0%E5%BC%BA%E7%89%88%EF%BC%89/Snipaste_2021-02-08_16-43-53.png">
-<meta property="og:image" content="http://example.com/2021/02/08/P2241%E7%BB%9F%E8%AE%A1%E6%96%B9%E5%BD%A2%EF%BC%88%E6%95%B0%E6%8D%AE%E5%8A%A0%E5%BC%BA%E7%89%88%EF%BC%89/%E9%95%BF%E6%96%B9%E5%BD%A2.png">
+<meta property="og:image" content="http://easyf12.gitee.io/blog/2021/02/08/P2241%E7%BB%9F%E8%AE%A1%E6%96%B9%E5%BD%A2%EF%BC%88%E6%95%B0%E6%8D%AE%E5%8A%A0%E5%BC%BA%E7%89%88%EF%BC%89/hexo/blog/2021/02/08/P2241%E7%BB%9F%E8%AE%A1%E6%96%B9%E5%BD%A2%EF%BC%88%E6%95%B0%E6%8D%AE%E5%8A%A0%E5%BC%BA%E7%89%88%EF%BC%89/P2241%E7%BB%9F%E8%AE%A1%E6%96%B9%E5%BD%A2%EF%BC%88%E6%95%B0%E6%8D%AE%E5%8A%A0%E5%BC%BA%E7%89%88%EF%BC%89-1/Snipaste_2021-02-08_16-42-15.png">
+<meta property="og:image" content="http://easyf12.gitee.io/blog/2021/02/08/P2241%E7%BB%9F%E8%AE%A1%E6%96%B9%E5%BD%A2%EF%BC%88%E6%95%B0%E6%8D%AE%E5%8A%A0%E5%BC%BA%E7%89%88%EF%BC%89/hexo/blog/2021/02/08/P2241%E7%BB%9F%E8%AE%A1%E6%96%B9%E5%BD%A2%EF%BC%88%E6%95%B0%E6%8D%AE%E5%8A%A0%E5%BC%BA%E7%89%88%EF%BC%89/P2241%E7%BB%9F%E8%AE%A1%E6%96%B9%E5%BD%A2%EF%BC%88%E6%95%B0%E6%8D%AE%E5%8A%A0%E5%BC%BA%E7%89%88%EF%BC%89-1/%E6%AD%A3%E6%96%B9%E5%BD%A2.png">
+<meta property="og:image" content="http://easyf12.gitee.io/blog/2021/02/08/P2241%E7%BB%9F%E8%AE%A1%E6%96%B9%E5%BD%A2%EF%BC%88%E6%95%B0%E6%8D%AE%E5%8A%A0%E5%BC%BA%E7%89%88%EF%BC%89/hexo/blog/2021/02/08/P2241%E7%BB%9F%E8%AE%A1%E6%96%B9%E5%BD%A2%EF%BC%88%E6%95%B0%E6%8D%AE%E5%8A%A0%E5%BC%BA%E7%89%88%EF%BC%89/P2241%E7%BB%9F%E8%AE%A1%E6%96%B9%E5%BD%A2%EF%BC%88%E6%95%B0%E6%8D%AE%E5%8A%A0%E5%BC%BA%E7%89%88%EF%BC%89-1/Snipaste_2021-02-08_16-43-53.png">
+<meta property="og:image" content="http://easyf12.gitee.io/blog/2021/02/08/P2241%E7%BB%9F%E8%AE%A1%E6%96%B9%E5%BD%A2%EF%BC%88%E6%95%B0%E6%8D%AE%E5%8A%A0%E5%BC%BA%E7%89%88%EF%BC%89/hexo/blog/2021/02/08/P2241%E7%BB%9F%E8%AE%A1%E6%96%B9%E5%BD%A2%EF%BC%88%E6%95%B0%E6%8D%AE%E5%8A%A0%E5%BC%BA%E7%89%88%EF%BC%89/P2241%E7%BB%9F%E8%AE%A1%E6%96%B9%E5%BD%A2%EF%BC%88%E6%95%B0%E6%8D%AE%E5%8A%A0%E5%BC%BA%E7%89%88%EF%BC%89-1/%E9%95%BF%E6%96%B9%E5%BD%A2.png">
 <meta property="article:published_time" content="2021-02-08T05:11:55.000Z">
 <meta property="article:modified_time" content="2021-02-08T11:24:39.335Z">
 <meta property="article:author" content="easyf12">
 <meta property="article:tag" content="C++">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://example.com/2021/02/08/P2241%E7%BB%9F%E8%AE%A1%E6%96%B9%E5%BD%A2%EF%BC%88%E6%95%B0%E6%8D%AE%E5%8A%A0%E5%BC%BA%E7%89%88%EF%BC%89/Snipaste_2021-02-08_16-42-15.png">
+<meta name="twitter:image" content="http://easyf12.gitee.io/blog/2021/02/08/P2241%E7%BB%9F%E8%AE%A1%E6%96%B9%E5%BD%A2%EF%BC%88%E6%95%B0%E6%8D%AE%E5%8A%A0%E5%BC%BA%E7%89%88%EF%BC%89/hexo/blog/2021/02/08/P2241%E7%BB%9F%E8%AE%A1%E6%96%B9%E5%BD%A2%EF%BC%88%E6%95%B0%E6%8D%AE%E5%8A%A0%E5%BC%BA%E7%89%88%EF%BC%89/P2241%E7%BB%9F%E8%AE%A1%E6%96%B9%E5%BD%A2%EF%BC%88%E6%95%B0%E6%8D%AE%E5%8A%A0%E5%BC%BA%E7%89%88%EF%BC%89-1/Snipaste_2021-02-08_16-42-15.png">
 
 
-<link rel="canonical" href="http://example.com/2021/02/08/P2241%E7%BB%9F%E8%AE%A1%E6%96%B9%E5%BD%A2%EF%BC%88%E6%95%B0%E6%8D%AE%E5%8A%A0%E5%BC%BA%E7%89%88%EF%BC%89/">
+<link rel="canonical" href="http://easyf12.gitee.io/blog/2021/02/08/P2241%E7%BB%9F%E8%AE%A1%E6%96%B9%E5%BD%A2%EF%BC%88%E6%95%B0%E6%8D%AE%E5%8A%A0%E5%BC%BA%E7%89%88%EF%BC%89/">
 
 
 <script class="page-configurations">
@@ -95,7 +95,7 @@
   </style>
 </noscript>
 
-<link rel="alternate" href="/atom.xml" title="easyf12's blog" type="application/atom+xml">
+<link rel="alternate" href="hexo/atom.xml" title="easyf12's blog" type="application/atom+xml">
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
@@ -114,7 +114,7 @@
 
   <div class="site-meta">
 
-    <a href="/" class="brand" rel="start">
+    <a href="hexo/" class="brand" rel="start">
       <i class="logo-line"></i>
       <h1 class="site-title">easyf12's blog</h1>
       <i class="logo-line"></i>
@@ -132,12 +132,12 @@
 
 <nav class="site-nav">
   <ul class="main-menu menu">
-        <li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li>
-        <li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li>
-        <li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li>
-        <li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li>
-        <li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
-        <li class="menu-item menu-item-sitemap"><a href="/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a></li>
+        <li class="menu-item menu-item-home"><a href="hexo/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li>
+        <li class="menu-item menu-item-about"><a href="hexo/about/" rel="section"><i class="fa fa-user fa-fw"></i>关于</a></li>
+        <li class="menu-item menu-item-tags"><a href="hexo/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li>
+        <li class="menu-item menu-item-categories"><a href="hexo/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li>
+        <li class="menu-item menu-item-archives"><a href="hexo/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+        <li class="menu-item menu-item-sitemap"><a href="hexo/sitemap.xml" rel="section"><i class="fa fa-sitemap fa-fw"></i>站点地图</a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
         </a>
@@ -202,20 +202,20 @@
 <div class="site-state-wrap site-overview-item animated">
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
-          <a href="/archives/">
+          <a href="hexo/archives/">
         
           <span class="site-state-item-count">28</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
-            <a href="/categories/">
+            <a href="hexo/categories/">
           
         <span class="site-state-item-count">6</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
-            <a href="/tags/">
+            <a href="hexo/tags/">
           
         <span class="site-state-item-count">18</span>
         <span class="site-state-item-name">标签</span></a>
@@ -535,10 +535,10 @@ if(canvas.getContext){
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/02/08/P2241%E7%BB%9F%E8%AE%A1%E6%96%B9%E5%BD%A2%EF%BC%88%E6%95%B0%E6%8D%AE%E5%8A%A0%E5%BC%BA%E7%89%88%EF%BC%89/">
+    <link itemprop="mainEntityOfPage" href="http://easyf12.gitee.io/blog/2021/02/08/P2241%E7%BB%9F%E8%AE%A1%E6%96%B9%E5%BD%A2%EF%BC%88%E6%95%B0%E6%8D%AE%E5%8A%A0%E5%BC%BA%E7%89%88%EF%BC%89/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="hexo/images/avatar.gif">
       <meta itemprop="name" content="easyf12">
       <meta itemprop="description" content="竹杖芒鞋轻胜马，谁怕？一蓑烟雨任平生。">
     </span>
@@ -569,7 +569,7 @@ if(canvas.getContext){
       </span>
       <span class="post-meta-item-text">分类于</span>
         <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-          <a href="/categories/%E9%A2%98%E8%A7%A3/" itemprop="url" rel="index"><span itemprop="name">题解</span></a>
+          <a href="hexo/categories/%E9%A2%98%E8%A7%A3/" itemprop="url" rel="index"><span itemprop="name">题解</span></a>
         </span>
     </span>
 
@@ -609,14 +609,14 @@ if(canvas.getContext){
 <p>这题洛谷上归到暴力枚举了，但是我认为不用暴力枚举，用数学方法就可以解决。</p>
 <a id="more"></a>
 <p>首先，我们知道，在任意一个长方形中，求小长方形（包括小正方形）的数量的公式是：</p>
-<p><img src="/2021/02/08/P2241%E7%BB%9F%E8%AE%A1%E6%96%B9%E5%BD%A2%EF%BC%88%E6%95%B0%E6%8D%AE%E5%8A%A0%E5%BC%BA%E7%89%88%EF%BC%89/Snipaste_2021-02-08_16-42-15.png" alt="Snipaste_2021-02-08_16-42-15"></p>
+<p><img src="hexo/blog/2021/02/08/P2241%E7%BB%9F%E8%AE%A1%E6%96%B9%E5%BD%A2%EF%BC%88%E6%95%B0%E6%8D%AE%E5%8A%A0%E5%BC%BA%E7%89%88%EF%BC%89/P2241%E7%BB%9F%E8%AE%A1%E6%96%B9%E5%BD%A2%EF%BC%88%E6%95%B0%E6%8D%AE%E5%8A%A0%E5%BC%BA%E7%89%88%EF%BC%89-1/Snipaste_2021-02-08_16-42-15.png" alt="Snipaste_2021-02-08_16-42-15"></p>
 <p>但是，这题让我们求的并不是包括小正方形的小长方形数，但是可以先把包括小正方形的小长方形数求出来，这个方法是我自己推出来的。可以举例说明。下面这个的正方形，它里面的小正方形的个数怎么求呢？</p>
-<p><img src="/2021/02/08/P2241%E7%BB%9F%E8%AE%A1%E6%96%B9%E5%BD%A2%EF%BC%88%E6%95%B0%E6%8D%AE%E5%8A%A0%E5%BC%BA%E7%89%88%EF%BC%89/%E6%AD%A3%E6%96%B9%E5%BD%A2.png" alt="正方形"></p>
+<p><img src="hexo/blog/2021/02/08/P2241%E7%BB%9F%E8%AE%A1%E6%96%B9%E5%BD%A2%EF%BC%88%E6%95%B0%E6%8D%AE%E5%8A%A0%E5%BC%BA%E7%89%88%EF%BC%89/P2241%E7%BB%9F%E8%AE%A1%E6%96%B9%E5%BD%A2%EF%BC%88%E6%95%B0%E6%8D%AE%E5%8A%A0%E5%BC%BA%E7%89%88%EF%BC%89-1/%E6%AD%A3%E6%96%B9%E5%BD%A2.png" alt="正方形"></p>
 <p>这我相信难不倒大家，边长为1的有16个，边长为2的有9个，边长为3的有4个，边长为4的有1个。就是：16+9+4+1=30（个）</p>
 <p>那，大家看着四个数，心中可能有一些联想：16=4×4,9=3×3，4=2×2,1=1×1。这样就把它们拆开了。这样我们就可以总结出求正方形中小正方形个数的公式了：</p>
-<p><img src="/2021/02/08/P2241%E7%BB%9F%E8%AE%A1%E6%96%B9%E5%BD%A2%EF%BC%88%E6%95%B0%E6%8D%AE%E5%8A%A0%E5%BC%BA%E7%89%88%EF%BC%89/Snipaste_2021-02-08_16-43-53.png" alt="Snipaste_2021-02-08_16-43-53"></p>
+<p><img src="hexo/blog/2021/02/08/P2241%E7%BB%9F%E8%AE%A1%E6%96%B9%E5%BD%A2%EF%BC%88%E6%95%B0%E6%8D%AE%E5%8A%A0%E5%BC%BA%E7%89%88%EF%BC%89/P2241%E7%BB%9F%E8%AE%A1%E6%96%B9%E5%BD%A2%EF%BC%88%E6%95%B0%E6%8D%AE%E5%8A%A0%E5%BC%BA%E7%89%88%EF%BC%89-1/Snipaste_2021-02-08_16-43-53.png" alt="Snipaste_2021-02-08_16-43-53"></p>
 <p>那么，这个长方形中有多少个小正方形呢？</p>
-<p><img src="/2021/02/08/P2241%E7%BB%9F%E8%AE%A1%E6%96%B9%E5%BD%A2%EF%BC%88%E6%95%B0%E6%8D%AE%E5%8A%A0%E5%BC%BA%E7%89%88%EF%BC%89/%E9%95%BF%E6%96%B9%E5%BD%A2.png" alt="长方形"></p>
+<p><img src="hexo/blog/2021/02/08/P2241%E7%BB%9F%E8%AE%A1%E6%96%B9%E5%BD%A2%EF%BC%88%E6%95%B0%E6%8D%AE%E5%8A%A0%E5%BC%BA%E7%89%88%EF%BC%89/P2241%E7%BB%9F%E8%AE%A1%E6%96%B9%E5%BD%A2%EF%BC%88%E6%95%B0%E6%8D%AE%E5%8A%A0%E5%BC%BA%E7%89%88%EF%BC%89-1/%E9%95%BF%E6%96%B9%E5%BD%A2.png" alt="长方形"></p>
 <p>大家可能就没招了。但是，把这个长方形照葫芦画瓢，两个边长换成长和宽，可不可以呢？</p>
 <p>5×4+4×3+3×2+2×1=40</p>
 <p>按照原来的方法数一数，我们可以发现，这样是可以的。但是，要注意，这里要先将两个数做比较，5&gt;4，所以就看4什么时候减到1，只要4减到1，就可以不加了。</p>
@@ -637,11 +637,11 @@ if(canvas.getContext){
   </button>
   <div class="post-reward">
       <div>
-        <img src="/images/wechatpay.png" alt="easyf12 微信">
+        <img src="hexo/images/wechatpay.png" alt="easyf12 微信">
         <span>微信</span>
       </div>
       <div>
-        <img src="/images/alipay.jpg" alt="easyf12 支付宝">
+        <img src="hexo/images/alipay.jpg" alt="easyf12 支付宝">
         <span>支付宝</span>
       </div>
 
@@ -649,19 +649,19 @@ if(canvas.getContext){
 </div>
 
           <div class="post-tags">
-              <a href="/tags/C/" rel="tag"><i class="fa fa-tag"></i>C++</a>
+              <a href="hexo/tags/C/" rel="tag"><i class="fa fa-tag"></i>C++</a>
           </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/2021/02/04/%E6%9C%80%E9%9A%BE%E5%BF%98%E7%9A%84%E5%9B%9E%E5%BF%86/" rel="prev" title="最难忘的回忆">
+                <a href="hexo/2021/02/04/%E6%9C%80%E9%9A%BE%E5%BF%98%E7%9A%84%E5%9B%9E%E5%BF%86/" rel="prev" title="最难忘的回忆">
                   <i class="fa fa-chevron-left"></i> 最难忘的回忆
                 </a>
             </div>
             <div class="post-nav-item">
-                <a href="/2021/03/01/Footprint/" rel="next" title="Footprint">
+                <a href="hexo/2021/03/01/Footprint/" rel="next" title="Footprint">
                   Footprint <i class="fa fa-chevron-right"></i>
                 </a>
             </div>
@@ -769,10 +769,10 @@ translateInitilization();
   
   <script size="300" alpha="0.6" zIndex="-1" src="https://cdn.jsdelivr.net/npm/ribbon.js@1.0.2/dist/ribbon.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
-<script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+<script src="hexo/js/utils.js"></script><script src="hexo/js/motion.js"></script><script src="hexo/js/schemes/muse.js"></script><script src="hexo/js/next-boot.js"></script>
 
   
-<script src="/js/local-search.js"></script>
+<script src="hexo/js/local-search.js"></script>
 
 
 
@@ -799,7 +799,7 @@ NexT.utils.loadComments('.gitalk-container', () => {
       repo        : 'easyf12.github.io',
       owner       : 'easyf12',
       admin       : ['easyf12'],
-      id          : 'c97325bbae8488c0c3a90dee10c82d26',
+      id          : '32505c642c730f7181633879d5635913',
         language: 'zh-CN',
       distractionFreeMode: true
     });

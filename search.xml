@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>说明</title>
-    <url>/2021/02/02/%E8%AF%B4%E6%98%8E/</url>
+    <url>hexo/2021/02/02/%E8%AF%B4%E6%98%8E/</url>
     <content><![CDATA[<p>其实，这些都是我之前的作文。现在我将这些作文贴在博客上，大家有兴趣的话可以看看。</p>
 <p>（当然，请不要介意我作文水平太烂……）</p>
 ]]></content>
@@ -15,7 +15,7 @@
   </entry>
   <entry>
     <title>Footprint</title>
-    <url>/2021/03/01/Footprint/</url>
+    <url>hexo/2021/03/01/Footprint/</url>
     <content><![CDATA[<p>It was the heaviest snow this year. I went out when it was dark outside. Snow fell on my hands, and then it became water. There were many footprints on the ground. The whole world was all quiet.</p>
 <a id="more"></a>
 <p>Suddenly, the sun rose up. Everything began to wake up. It became brighter and brighter now. The snow was melting. The footprints faded.</p>
@@ -31,19 +31,19 @@
   </entry>
   <entry>
     <title>P2241 统计方形（数据加强版）</title>
-    <url>/2021/02/08/P2241%E7%BB%9F%E8%AE%A1%E6%96%B9%E5%BD%A2%EF%BC%88%E6%95%B0%E6%8D%AE%E5%8A%A0%E5%BC%BA%E7%89%88%EF%BC%89/</url>
+    <url>hexo/2021/02/08/P2241%E7%BB%9F%E8%AE%A1%E6%96%B9%E5%BD%A2%EF%BC%88%E6%95%B0%E6%8D%AE%E5%8A%A0%E5%BC%BA%E7%89%88%EF%BC%89/</url>
     <content><![CDATA[<p><a href="https://www.luogu.com.cn/problem/P2241">题目网址</a></p>
 <p>这题洛谷上归到暴力枚举了，但是我认为不用暴力枚举，用数学方法就可以解决。</p>
 <a id="more"></a>
 <p>首先，我们知道，在任意一个长方形中，求小长方形（包括小正方形）的数量的公式是：</p>
-<p><img src="/2021/02/08/P2241%E7%BB%9F%E8%AE%A1%E6%96%B9%E5%BD%A2%EF%BC%88%E6%95%B0%E6%8D%AE%E5%8A%A0%E5%BC%BA%E7%89%88%EF%BC%89/Snipaste_2021-02-08_16-42-15.png" alt="Snipaste_2021-02-08_16-42-15"></p>
+<p><img src="hexo/blog/2021/02/08/P2241%E7%BB%9F%E8%AE%A1%E6%96%B9%E5%BD%A2%EF%BC%88%E6%95%B0%E6%8D%AE%E5%8A%A0%E5%BC%BA%E7%89%88%EF%BC%89/P2241%E7%BB%9F%E8%AE%A1%E6%96%B9%E5%BD%A2%EF%BC%88%E6%95%B0%E6%8D%AE%E5%8A%A0%E5%BC%BA%E7%89%88%EF%BC%89-1/Snipaste_2021-02-08_16-42-15.png" alt="Snipaste_2021-02-08_16-42-15"></p>
 <p>但是，这题让我们求的并不是包括小正方形的小长方形数，但是可以先把包括小正方形的小长方形数求出来，这个方法是我自己推出来的。可以举例说明。下面这个的正方形，它里面的小正方形的个数怎么求呢？</p>
-<p><img src="/2021/02/08/P2241%E7%BB%9F%E8%AE%A1%E6%96%B9%E5%BD%A2%EF%BC%88%E6%95%B0%E6%8D%AE%E5%8A%A0%E5%BC%BA%E7%89%88%EF%BC%89/%E6%AD%A3%E6%96%B9%E5%BD%A2.png" alt="正方形"></p>
+<p><img src="hexo/blog/2021/02/08/P2241%E7%BB%9F%E8%AE%A1%E6%96%B9%E5%BD%A2%EF%BC%88%E6%95%B0%E6%8D%AE%E5%8A%A0%E5%BC%BA%E7%89%88%EF%BC%89/P2241%E7%BB%9F%E8%AE%A1%E6%96%B9%E5%BD%A2%EF%BC%88%E6%95%B0%E6%8D%AE%E5%8A%A0%E5%BC%BA%E7%89%88%EF%BC%89-1/%E6%AD%A3%E6%96%B9%E5%BD%A2.png" alt="正方形"></p>
 <p>这我相信难不倒大家，边长为1的有16个，边长为2的有9个，边长为3的有4个，边长为4的有1个。就是：16+9+4+1=30（个）</p>
 <p>那，大家看着四个数，心中可能有一些联想：16=4×4,9=3×3，4=2×2,1=1×1。这样就把它们拆开了。这样我们就可以总结出求正方形中小正方形个数的公式了：</p>
-<p><img src="/2021/02/08/P2241%E7%BB%9F%E8%AE%A1%E6%96%B9%E5%BD%A2%EF%BC%88%E6%95%B0%E6%8D%AE%E5%8A%A0%E5%BC%BA%E7%89%88%EF%BC%89/Snipaste_2021-02-08_16-43-53.png" alt="Snipaste_2021-02-08_16-43-53"></p>
+<p><img src="hexo/blog/2021/02/08/P2241%E7%BB%9F%E8%AE%A1%E6%96%B9%E5%BD%A2%EF%BC%88%E6%95%B0%E6%8D%AE%E5%8A%A0%E5%BC%BA%E7%89%88%EF%BC%89/P2241%E7%BB%9F%E8%AE%A1%E6%96%B9%E5%BD%A2%EF%BC%88%E6%95%B0%E6%8D%AE%E5%8A%A0%E5%BC%BA%E7%89%88%EF%BC%89-1/Snipaste_2021-02-08_16-43-53.png" alt="Snipaste_2021-02-08_16-43-53"></p>
 <p>那么，这个长方形中有多少个小正方形呢？</p>
-<p><img src="/2021/02/08/P2241%E7%BB%9F%E8%AE%A1%E6%96%B9%E5%BD%A2%EF%BC%88%E6%95%B0%E6%8D%AE%E5%8A%A0%E5%BC%BA%E7%89%88%EF%BC%89/%E9%95%BF%E6%96%B9%E5%BD%A2.png" alt="长方形"></p>
+<p><img src="hexo/blog/2021/02/08/P2241%E7%BB%9F%E8%AE%A1%E6%96%B9%E5%BD%A2%EF%BC%88%E6%95%B0%E6%8D%AE%E5%8A%A0%E5%BC%BA%E7%89%88%EF%BC%89/P2241%E7%BB%9F%E8%AE%A1%E6%96%B9%E5%BD%A2%EF%BC%88%E6%95%B0%E6%8D%AE%E5%8A%A0%E5%BC%BA%E7%89%88%EF%BC%89-1/%E9%95%BF%E6%96%B9%E5%BD%A2.png" alt="长方形"></p>
 <p>大家可能就没招了。但是，把这个长方形照葫芦画瓢，两个边长换成长和宽，可不可以呢？</p>
 <p>5×4+4×3+3×2+2×1=40</p>
 <p>按照原来的方法数一数，我们可以发现，这样是可以的。但是，要注意，这里要先将两个数做比较，5&gt;4，所以就看4什么时候减到1，只要4减到1，就可以不加了。</p>
@@ -59,7 +59,7 @@
   </entry>
   <entry>
     <title>最难忘的回忆</title>
-    <url>/2021/02/04/%E6%9C%80%E9%9A%BE%E5%BF%98%E7%9A%84%E5%9B%9E%E5%BF%86/</url>
+    <url>hexo/2021/02/04/%E6%9C%80%E9%9A%BE%E5%BF%98%E7%9A%84%E5%9B%9E%E5%BF%86/</url>
     <content><![CDATA[<p>他是《六经》的编著者，他是儒家思想的代表人，他是中国历史上第一位开设私塾的老师，他还提出了“因材施教”的教育方针……</p>
 <a id="more"></a>
 <p>他就是——孔子。一位真正的、活得十分精彩的圣人。<br>今天，我来到了孔子的故里——山东曲阜。曲阜是一个十分古老的地方，在春秋时期就以国的形式存在，它就是礼仪之邦——鲁国。孔子的故里共分为三个部分：孔庙、孔府和孔林。由于时间原因，我们只参观了孔庙和孔府。<br>刚到孔庙，那雄壮的四个大字立刻吸引了我的注意力——万仞宫墙。我的心中浮现出了无数个问号：这个词是什么意思？在这里又表示什么？而它与孔庙又有什么关系？……就在这时，旁边的导游开口了：“这个词的意思是一堵宫墙有数万个人堆砌起来那样高，在这里比喻孔子的学问十分渊博。在这个词中还有一个小故事：有人说子贡（孔子的徒弟）的学问已经比孔子高了，而子贡却反对：‘我的学问只到了一个人的肩膀，而老师的学问有许多人堆砌起来那么高。’”听完导游的讲解，我恍然大悟，原来这短短四个字的含义这么深啊！我同时也感受到了孔子知识的渊博，不愧是孔圣人！<br>我也在后面体会到孔子及孔家的地位都十分的高。在明、清朝的时候，孔家的地位已经到了顶峰，每位皇帝都会赞扬孔子的高尚品德，还为孔家修建了许多建筑。到现在为止，孔家的后花园比北京故宫的后花园都大五十亩！虽说如此，但孔夫子在世的时候都十分清贫。因此，我再一次感受到了孔子的伟大。<br>这是一段最难忘的回忆。我永远不会忘记：2020年1月，我曾与孔夫子相聚。</p>
@@ -73,7 +73,7 @@
   </entry>
   <entry>
     <title>有意思的游戏</title>
-    <url>/2021/02/04/%E6%9C%89%E6%84%8F%E6%80%9D%E7%9A%84%E6%B8%B8%E6%88%8F/</url>
+    <url>hexo/2021/02/04/%E6%9C%89%E6%84%8F%E6%80%9D%E7%9A%84%E6%B8%B8%E6%88%8F/</url>
     <content><![CDATA[<p>这次，老师组织了一次有意思的游戏——夹乒乓球。游戏分两组进行，6人一组，给每个人发一双筷子。老师先把乒乓球给第一个人，第一个人夹起球后给第二个人，这样依次传下去，最先传完的一组获胜。规则宣布完毕后，参赛选手们个个摩拳擦掌，跃跃欲试，已经等不及了。</p>
 <a id="more"></a>
 <p>“预备……开始！”随着老师的一声令下，两组的组员们都紧张了起来，专心致志地等待着前面的球。只见第一组前面都进行得很顺利，传到小周同学时，球“啪”的一声掉到了地上。组员们都慌了，于是急忙去捡球，生怕第二组超越了他们的进度。尤其是小周同学，他眉头紧皱绷着脸，额头上现出几颗亮晶晶的汗珠，捡球时恨不得趴到地上。他捡起了球，想把它夹住，可是世事难料，他夹了好几次都没夹起来。“加油！你可以的！”旁边传来组员的鼓励声，小周忽然振作了起来，仿佛在说：我一定可以！这一次，他很快就夹起了乒乓球。接着，第一组的同学继续往后传，而此时，第二组只完成了第一组的一半。第一组传到最后一位同学了，前面的同学小心翼翼地夹着，后面的同学小心翼翼地接着，两位同学的手都有些颤抖，生怕球掉地上。同学们都探着头静静等着第一组取得胜利，空气仿佛凝固了，没有人大声说话，也没有人窃窃私语，旁边写作业的同学也停下了笔。“不要犹豫！夹吧！夹住了就胜利了！”小周不禁大喊道。听到这声音，后面的同学也不再犹豫，干脆地夹了过去……</p>
@@ -89,7 +89,7 @@
   </entry>
   <entry>
     <title>有你，真好</title>
-    <url>/2021/02/04/%E6%9C%89%E4%BD%A0%EF%BC%8C%E7%9C%9F%E5%A5%BD/</url>
+    <url>hexo/2021/02/04/%E6%9C%89%E4%BD%A0%EF%BC%8C%E7%9C%9F%E5%A5%BD/</url>
     <content><![CDATA[<p>那是一次不同寻常的邂逅。那天，天气如此明朗，空气也格外清新。从那以后，我的心中就充满了阳光，就像那天的阳光一样灿烂，那样美好。</p>
 <a id="more"></a>
 <p>一次写数学小论文，我十分懊恼，好不容易费了半天时间挤牙膏似的挤出了一篇只有四百字的文章，老师却看了一眼就打回来了。那时我近乎绝望，北风呼呼地吹着，我的心也被冻结了一样，泣不成声。就在这时，你悄悄地走了过来，用一个充满力量的眼神看了我一眼，接着又悄悄地走了。但是，你知道吗？那个眼神，不知道给予了我多少鼓励，它使我振作了起来，提笔半小时就完成了一篇文章。这篇文章被评为了优秀。</p>
@@ -107,7 +107,7 @@
   </entry>
   <entry>
     <title>小区楼道管理倡议书</title>
-    <url>/2021/02/04/%E5%B0%8F%E5%8C%BA%E6%A5%BC%E9%81%93%E7%AE%A1%E7%90%86%E5%80%A1%E8%AE%AE%E4%B9%A6/</url>
+    <url>hexo/2021/02/04/%E5%B0%8F%E5%8C%BA%E6%A5%BC%E9%81%93%E7%AE%A1%E7%90%86%E5%80%A1%E8%AE%AE%E4%B9%A6/</url>
     <content><![CDATA[<p><strong>居民朋友们：</strong></p>
 <p>大家好！每次回家的路上，在楼道中我能看到很多车乱停乱放，一辆车占三个位置；卫生也不太好，有时在地上的玻璃渣就留在楼梯上，没有及时处理，而且墙上时常能看到乱七八糟的涂鸦；有的居民养狗，就让狗在楼道里如厕，粪便也不及时处理。为了增强小区的楼道管理，让我们一起努力，尽量做到以下几点：</p>
 <a id="more"></a>
@@ -140,7 +140,7 @@
   </entry>
   <entry>
     <title>闲不住的奶奶</title>
-    <url>/2021/02/04/%E9%97%B2%E4%B8%8D%E4%BD%8F%E7%9A%84%E5%A5%B6%E5%A5%B6/</url>
+    <url>hexo/2021/02/04/%E9%97%B2%E4%B8%8D%E4%BD%8F%E7%9A%84%E5%A5%B6%E5%A5%B6/</url>
     <content><![CDATA[<p>我的奶奶十分勤快，每天都闲不住，一年三百六十五天，没有一小时是闲着的。</p>
 <a id="more"></a>
 <p>清晨，奶奶早早地起来，快速地刷牙洗脸，接着开始锻炼身体。“一二三四五六七八，二二三四五六七八，三二……”她围着客厅的茶几小跑着，呼吸均匀，两手前后稍稍摆动，跑得十分标准。过了一会儿，奶奶又开始练太极拳，柔中带刚，虽没有到出神入化的地步，倒有几副架势。<br>早上，该吃早饭了，奶奶开始做饭。她将锅接上水，并从架子上拿出西红柿，烧水的同时切好西红柿，接着熟练地将西红柿放进锅里，进行第一次翻炒。又拿出面条，将面条放进锅里，放些盐和葱，再进行第二次翻炒，短短十分钟就做成了美味的西红柿面。那时，奶奶脸上现出了几颗晶莹的汗珠。她捏了一把汗，满足地看着锅里的面条，似乎对自己做的面条十分满意。<br>吃完面后，你可能会以为奶奶会歇息一会儿，或看一会儿电视。那么你错了，奶奶可没这么轻易“败下阵来”，瞧，她又拿起了针和线，开始织毛衣了。只见她左一针，右一针，每一针都让你担心扎到手指，每一针却又缝得恰到好处。她越织越来劲，彻底地陶醉在其中。于是仅一根针，几团线，就创造出了一件又一件的漂亮的衣服。织完衣服，她又开始织一幅已经织了一半的《万马奔腾》。她还有宏伟设想，要靠她的双手织出更多的画在家里做装饰，甚至对外卖出。<br>到了中午，奶奶又要开始做饭了……<br>这就是我的奶奶，一个闲不住的奶奶。我想，这样闲不住的生活一定会很充实，美好……</p>
@@ -154,7 +154,7 @@
   </entry>
   <entry>
     <title>下棋让生活更美好</title>
-    <url>/2021/02/04/%E4%B8%8B%E6%A3%8B%E8%AE%A9%E7%94%9F%E6%B4%BB%E6%9B%B4%E7%BE%8E%E5%A5%BD/</url>
+    <url>hexo/2021/02/04/%E4%B8%8B%E6%A3%8B%E8%AE%A9%E7%94%9F%E6%B4%BB%E6%9B%B4%E7%BE%8E%E5%A5%BD/</url>
     <content><![CDATA[<p>记得那天，是数学成绩公布的日子。发试卷时，老师读到：“徐嘉一，100分！姚景豪，80分，严重退步！”</p>
 <a id="more"></a>
 <p>刚念到成绩时，我的大脑一片空白。顿时，我的脑袋就像被炸了一样，眼泪如泉水涌了出来，80分的考卷如一座山压着我，令我无法呼吸。<br>回到家里，我头也不抬地写完了作业，泪水出现在每个角落。我绝望了，这是我人生中第一次遇到挫折。我用已经僵硬的手打开电脑，想要下盘棋转移注意力。我一开始只是漫无目的地挪动棋子，两眼失神，腿一直颤抖着，苍白的脸上没有一丝光泽，心中依然是无尽的悲伤。过了一会儿，我仿佛被赋予了生命，脑袋开始运转了起来，身体也能动了，浑身都有了力气，心里不再那么难受了。到了后来，我已经完全进入状态，将全身心投入到棋中，一点点悲伤也没有了。这小小的棋盘和棋子，仿佛有魔力一样，将我的灵魂带到了棋的世界里，快乐地漫游在其中。<br>在下棋的过程中，我受益良多：在这场游戏中，暂时的失利不代表永恒的失败，在比赛的任何时刻，你都有可能因为一步棋而失利，但是你也有机会再次夺回先机。考试也是如此，一次考试说明不了什么，人生的路很长，会遇到无数次考试，只要总体是好的，就是胜利了！<br>下完棋以后，我悲伤全无，还有一股隐形的力量鼓励我前行。短短的一盘棋使我得到了许多，这时的我已经不是一刻钟之前的我了。<br>棋，能令人投入进去，还能缓解情绪，更能告诉我们使人一生受用的道理！<br>我想，下棋，让生活更美好！</p>
@@ -168,7 +168,7 @@
   </entry>
   <entry>
     <title>系红领巾大赛</title>
-    <url>/2021/02/04/%E7%B3%BB%E7%BA%A2%E9%A2%86%E5%B7%BE%E5%A4%A7%E8%B5%9B/</url>
+    <url>hexo/2021/02/04/%E7%B3%BB%E7%BA%A2%E9%A2%86%E5%B7%BE%E5%A4%A7%E8%B5%9B/</url>
     <content><![CDATA[<p>周五，我们班举行了一场系红领巾大赛，大家都十分兴奋，选手们系得不亦乐乎，观众们也看得不亦乐乎。</p>
 <a id="more"></a>
 <p>前两轮，大半的人都被淘汰了，只剩下十个同学了。第三轮紧张激烈的决赛开始了。“预备——”裁判员一发口令，选手们就个个都紧紧地握着红领巾，腿不停地颤抖，表情十分专注，生怕错过比赛开始的时间。下面的观众也是屏息凝神，将视线放在选手们的身上，专心致志地看着比赛。“开始！”随着裁判员的一声令下，选手们都快速地卷着红领巾，台下助威的同学都在不停地喝彩，“加油”的鼓励声席卷了整个教室。观众们议论纷纷：“你说谁能得第一？”“我觉得应该是小张吧，她半决赛第一名呢！”“我也这么觉得，我看见了，她速度很快的！”</p>
@@ -186,7 +186,7 @@
   </entry>
   <entry>
     <title>我好想成长</title>
-    <url>/2021/02/04/%E6%88%91%E5%A5%BD%E6%83%B3%E6%88%90%E9%95%BF/</url>
+    <url>hexo/2021/02/04/%E6%88%91%E5%A5%BD%E6%83%B3%E6%88%90%E9%95%BF/</url>
     <content><![CDATA[<p>成长是一件很不容易的事情，它不单单只是岁数的增长，还有身高、体重、心理、智慧……很多方面都能见证你是否成长了。而成长在我们的认知看来，成长也是神圣的、美好的。“我好想成长！”是我们每个小孩子的心声。而我们怎样才能成长起来呢？</p>
 <a id="more"></a>
 <p>小王天天在家里无事可做，我除了看见他在打游戏就从没看见过他做其他事情。小王妈妈尽力开导他：“你就不能做一些别的事情吗？”他总是说：“等一会儿！等一会儿！我打完这局游戏再说！”但是他打完这局游戏就又开始匹配新的一局。我认为，他是失去了方向，不知道该做些什么。</p>
@@ -207,7 +207,7 @@
   </entry>
   <entry>
     <title>我的拿手好戏</title>
-    <url>/2021/02/04/%E6%88%91%E7%9A%84%E6%8B%BF%E6%89%8B%E5%A5%BD%E6%88%8F/</url>
+    <url>hexo/2021/02/04/%E6%88%91%E7%9A%84%E6%8B%BF%E6%89%8B%E5%A5%BD%E6%88%8F/</url>
     <content><![CDATA[<p>“成功了！我成功了！”瞧，我又成功地完成了招式，高兴得合不拢嘴。我想，玩悠悠球是我最大的乐趣。而怎么学会悠悠球的，还得从头说起。</p>
 <a id="more"></a>
 <p>想当初学悠悠球，根本没有老师教我，完全是我出于兴趣自己练习学会的。我之前从电视上看到过悠悠球，并很快就爱上了它。于是我自己就买了一个，接着就看视频不停地练习。短短几个月，我就练成了。</p>
@@ -224,7 +224,7 @@
   </entry>
   <entry>
     <title>难忘的画面</title>
-    <url>/2021/02/04/%E9%9A%BE%E5%BF%98%E7%9A%84%E7%94%BB%E9%9D%A2/</url>
+    <url>hexo/2021/02/04/%E9%9A%BE%E5%BF%98%E7%9A%84%E7%94%BB%E9%9D%A2/</url>
     <content><![CDATA[<p>“加油！加油！”瞧，一年一度的运动会开始了，大家都欢呼雀跃，各路啦啦队不停地加油。现在进行的是跳绳比赛。各位选手都紧紧地着绳子，眉头紧皱，一副蓄势待发的样子，已经等不及了。</p>
 <a id="more"></a>
 <p>“预备，开始！”随着裁判的一声令下，参赛选手们都卖力地跳了起来，想在一开始获得优势。只见我班的左尚弘同学一直富有节奏地跳着，半分钟已经跳到了一百个，甩绳十分有力，虎虎生风；旁边的同学也不甘示弱，脸涨得红扑扑的，和左尚弘跳得不分上下，虽说个子小，也有一番气势。比赛渐渐进入白热化状态，大家跳得都慢了下来，力气已经用了大半，都无力跳太快了，旁边的小个子也慢了下来。可是左尚弘却恰恰相反，他跳得更加卖力，脸上流过几滴汗珠。“加油！加油！你一定能行！”我大喊了一声为他加油。“啪！”完了，左尚弘的绳子打到了裤腿上，间断了！全班都慌了，有的恨不得直接上去给他摆好绳子。只有他却毫不着急，镇定地放好绳子，继续跳。最后几秒钟了，大家都跳不动了，个个累得都要趴到地上。只有左尚弘还在不停地跳着，脸上汗珠更多了，腿也开始颤抖。“加油，再冲刺一下就结束了！”赛场上传来阵阵鼓励声，同时，大家也紧张地为左尚弘数着：“156,157,158,159,160……”“嘟！”裁判吹响了口哨，比赛结束了，左尚弘取得了160的优良成绩！那一瞬间，全场都沸腾了，大家都为左尚弘鼓掌。而这胜利的荣光，这不是他拼才得到的吗？</p>
@@ -239,7 +239,7 @@
   </entry>
   <entry>
     <title>令人感动的画面</title>
-    <url>/2021/02/04/%E4%BB%A4%E4%BA%BA%E6%84%9F%E5%8A%A8%E7%9A%84%E7%94%BB%E9%9D%A2/</url>
+    <url>hexo/2021/02/04/%E4%BB%A4%E4%BA%BA%E6%84%9F%E5%8A%A8%E7%9A%84%E7%94%BB%E9%9D%A2/</url>
     <content><![CDATA[<p>生活像一部电影，播放着一幅幅精彩的画面，有伤心，有快乐，也有苦恼……而最令我难忘的，是我旅游中一次小小的意外。</p>
 <a id="more"></a>
 <p>那是我们去天堂寨的路上，之前都很顺利，直到到达一个服务区稍作休整时，爸爸打开了后备箱，就在那时，我伸了一个懒腰“啊！”我的手指被爸爸关后备箱夹了！大家听到了我的尖叫声，都惊慌失措，不知该怎么好，尤其是左妙言，像是触了电一样，迅速地跑进车里，想看见我到底怎么了。鲁紫伊妈妈坐在我旁边，首先发现了我的手被夹，于是急忙向爸爸大喊：“快把后备箱打开，姚景豪的手被夹了！”爸爸听到了，一边对我大喊“怎么啦？到底怎么啦？”，一边一个箭步跑到后备箱前，以迅雷不及掩耳之势打开了后备箱，我终于得救了。</p>
@@ -255,7 +255,7 @@
   </entry>
   <entry>
     <title>泪</title>
-    <url>/2021/02/04/%E6%B3%AA/</url>
+    <url>hexo/2021/02/04/%E6%B3%AA/</url>
     <content><![CDATA[<p>泪，是情感的表现。上天给了我眼泪，让我记录人生中最重要的瞬间。</p>
 <a id="more"></a>
 <p>泪，有激动。那天是五年级下期末考试公布成绩的日子，我不禁有些担心。到学校后，老师走进了教室，抱着一沓卷子宣布成绩：“王刚，语文90，数学103，英语99；张明……”老师突然停顿了，我心里咯噔了一下：上次我只考了年级五十名，这次难道考得更不好了？“语文96，数学110，英语98，年级第七！”</p>
@@ -275,7 +275,7 @@
   </entry>
   <entry>
     <title>发现</title>
-    <url>/2021/02/02/%E5%8F%91%E7%8E%B0/</url>
+    <url>hexo/2021/02/02/%E5%8F%91%E7%8E%B0/</url>
     <content><![CDATA[<p>这世界上有许许多多值得探索的东西，而在生活中，我们也要有一双善于观察的慧眼，去发现世间万物中蕴含的学问。</p>
 <a id="more"></a>
 <p>有一次，我在公园散步时，看着路旁的植物，突然对它们产生了兴趣。我一一询问了爸爸，发现这些植物中有南方的也有北方的。我十分奇怪，不知道为什么我们蚌埠有这么多种类不同、生长地区也不同的植物。于是我请教了科学老师。老师笑了笑，对我说：“你先回家猜一猜，明天将你的猜想告诉我，好吗？”“好！”</p>
@@ -293,7 +293,7 @@
   </entry>
   <entry>
     <title>地球自述</title>
-    <url>/2021/02/02/%E5%9C%B0%E7%90%83%E8%87%AA%E8%BF%B0/</url>
+    <url>hexo/2021/02/02/%E5%9C%B0%E7%90%83%E8%87%AA%E8%BF%B0/</url>
     <content><![CDATA[<p>在一个夜深人静的夜晚，我翻来覆去睡不着，心中就产生了一些想象：如果我是地球，会怎么样呢？想着想着，我就感觉眼皮开始打架……</p>
 <a id="more"></a>
 <p>就在那时，我变成了地球。我突然发现我变成成了一个椭圆形的大球，并且我不能再自由活动，只能沿着一条轨道行走。身边是我的兄弟姐妹——水星、木星、火星等，还有我们的父亲——太阳——我们都围着他转动。在这众多星球中，我是最受宠的，因为我有适合生存的环境。仰望天空，是多么深邃，多么遥远，我不禁为我是其中的一员而骄傲。</p>
@@ -311,7 +311,7 @@
   </entry>
   <entry>
     <title>春</title>
-    <url>/2021/02/02/%E6%98%A5/</url>
+    <url>hexo/2021/02/02/%E6%98%A5/</url>
     <content><![CDATA[<p>那是一个冬日的黄昏。街上车来人往，汽车的轰鸣声和人们的脚步声夹杂在一起，不十分动听。冰冷刺骨的寒风呼啸着，如一把刀子削着人们的脸庞，让大家都显得清瘦了。</p>
 <a id="more"></a>
 <p>“汪！汪！”一条小狗吠叫着，跑到了志愿者徐明的身边。很明显，它是一条流浪狗。徐明看它可怜，就把它抱了起来，随后就开始沿街寻找有意收养小狗的人。他询问了近20个人，可是没有一个人愿意收养它。看着身边的小狗，他心里又怜悯又着急：“我自己天天都要志愿者站岗，没法照顾它啊！怎么才能帮小狗找到主人呢？”</p>
@@ -329,7 +329,7 @@
   </entry>
   <entry>
     <title>成长路上，有你真好</title>
-    <url>/2021/02/02/%E6%88%90%E9%95%BF%E8%B7%AF%E4%B8%8A%EF%BC%8C%E6%9C%89%E4%BD%A0%E7%9C%9F%E5%A5%BD/</url>
+    <url>hexo/2021/02/02/%E6%88%90%E9%95%BF%E8%B7%AF%E4%B8%8A%EF%BC%8C%E6%9C%89%E4%BD%A0%E7%9C%9F%E5%A5%BD/</url>
     <content><![CDATA[<p>事情发生在那天上午。</p>
 <a id="more"></a>
 <p>王刚在没有经过我同意的情况下，踩我的凳子在上面张望。我十分气恼，于是也踩在他的凳子上。他一看，脾气就上来了，拿着我的书包就要往外扔，我也不甘示弱，也拿起他的东西要扔。虽然我知道这样扔东西不好，可是还是没有抑制自己的情绪，一时心中火起，扔了出去……</p>
@@ -350,7 +350,7 @@
   </entry>
   <entry>
     <title>成长</title>
-    <url>/2021/02/02/%E6%88%90%E9%95%BF/</url>
+    <url>hexo/2021/02/02/%E6%88%90%E9%95%BF/</url>
     <content><![CDATA[<p>人生，就是为了成长，让自己更强大。我一直在努力地成长。</p>
 <p>一切都发生在一个重阳节——那天，我成长了许多。</p>
 <a id="more"></a>
@@ -374,7 +374,7 @@
   </entry>
   <entry>
     <title>爱，就在我身边</title>
-    <url>/2021/02/02/%E7%88%B1%EF%BC%8C%E5%B0%B1%E5%9C%A8%E6%88%91%E8%BA%AB%E8%BE%B9/</url>
+    <url>hexo/2021/02/02/%E7%88%B1%EF%BC%8C%E5%B0%B1%E5%9C%A8%E6%88%91%E8%BA%AB%E8%BE%B9/</url>
     <content><![CDATA[<p>那时我大概三年级吧，下午上体育课，我像平常一样走向操场，突然有几个六年级的大孩子一阵风似的跑了过来，对当时的我来说他们又高又壮，就如一堵人墙。看着他们向我袭来，我愣了一下，没来及躲闪就被他们撞倒了……</p>
 <p>一阵眩晕，一阵头痛，一阵腿疼。</p>
 <a id="more"></a>
@@ -394,7 +394,7 @@
   </entry>
   <entry>
     <title>浣溪沙·电脑编程刷题</title>
-    <url>/2021/02/01/%E6%B5%A3%E6%BA%AA%E6%B2%99%C2%B7%E7%94%B5%E8%84%91%E7%BC%96%E7%A8%8B%E5%88%B7%E9%A2%98/</url>
+    <url>hexo/2021/02/01/%E6%B5%A3%E6%BA%AA%E6%B2%99%C2%B7%E7%94%B5%E8%84%91%E7%BC%96%E7%A8%8B%E5%88%B7%E9%A2%98/</url>
     <content><![CDATA[<p>学习电脑编程，中遇难题，赋词一首：</p>
 <a id="more"></a>
 <p>山下师父要AC，总是WA TLE，有时还有MLE。</p>
@@ -409,7 +409,7 @@
   </entry>
   <entry>
     <title>长恨歌·作文难</title>
-    <url>/2021/02/01/%E9%95%BF%E6%81%A8%E6%AD%8C%C2%B7%E4%BD%9C%E6%96%87%E9%9A%BE/</url>
+    <url>hexo/2021/02/01/%E9%95%BF%E6%81%A8%E6%AD%8C%C2%B7%E4%BD%9C%E6%96%87%E9%9A%BE/</url>
     <content><![CDATA[<p>（词前小序）作文乃奇难之物，因难之又难，遂赋词一首：</p>
 <p>作文难，难于上青天。</p>
 <a id="more"></a>
@@ -447,7 +447,7 @@
   </entry>
   <entry>
     <title>西江月·夜里写作业</title>
-    <url>/2021/02/01/%E8%A5%BF%E6%B1%9F%E6%9C%88%C2%B7%E5%A4%9C%E9%87%8C%E5%86%99%E4%BD%9C%E4%B8%9A/</url>
+    <url>hexo/2021/02/01/%E8%A5%BF%E6%B1%9F%E6%9C%88%C2%B7%E5%A4%9C%E9%87%8C%E5%86%99%E4%BD%9C%E4%B8%9A/</url>
     <content><![CDATA[<p>明月别枝惊鹊，作业写到半夜。</p>
 <a id="more"></a>
 <p>稻花香里说丰年，一篇作文写两年。</p>
@@ -463,7 +463,7 @@
   </entry>
   <entry>
     <title>P1421 小玉买文具</title>
-    <url>/2021/02/01/P1421%E5%B0%8F%E7%8E%89%E4%B9%B0%E6%96%87%E5%85%B7/</url>
+    <url>hexo/2021/02/01/P1421%E5%B0%8F%E7%8E%89%E4%B9%B0%E6%96%87%E5%85%B7/</url>
     <content><![CDATA[<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">   <span class="keyword">int</span> a,b,c,d;</span><br><span class="line">   <span class="built_in">cin</span>&gt;&gt;a&gt;&gt;b;     <span class="comment">//输入</span></span><br><span class="line">   c=a*<span class="number">10</span>+b;      <span class="comment">//a以元为单位，b以角为单位，用c将它们统一单位成角，这样便于处理</span></span><br><span class="line">   d=c/<span class="number">19</span>;        <span class="comment">//用d存放能买到的签字笔的支数</span></span><br><span class="line">   <span class="built_in">cout</span>&lt;&lt;d;       <span class="comment">//输出</span></span><br><span class="line">   <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <a id="more"></a>
 <p>这题十分简单，解释都在注释里写过了。唯一需要注意的一点是C++里的除法默认为整除，所以不用担心小数的问题。</p>
@@ -477,7 +477,7 @@
   </entry>
   <entry>
     <title>P1000 超级玛丽游戏</title>
-    <url>/2021/02/01/P1000%E8%B6%85%E7%BA%A7%E7%8E%9B%E4%B8%BD%E6%B8%B8%E6%88%8F/</url>
+    <url>hexo/2021/02/01/P1000%E8%B6%85%E7%BA%A7%E7%8E%9B%E4%B8%BD%E6%B8%B8%E6%88%8F/</url>
     <content><![CDATA[<h1 id="略。"><a href="#略。" class="headerlink" title="略。"></a>略。</h1><a id="more"></a>
 <p>开个玩笑，主要是这题实在太闷骚了，就是打字练习，没什么技术含量。但是经过我的百般思考之后……</p>
 <h3 id="我还是写了！"><a href="#我还是写了！" class="headerlink" title="我还是写了！"></a>我还是写了！</h3><p>请看下面这段不值得一看的代码。<br><figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="built_in">cout</span>&lt;&lt;<span class="string">&quot;                ********&quot;</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">	<span class="built_in">cout</span>&lt;&lt;<span class="string">&quot;               ************&quot;</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">	<span class="built_in">cout</span>&lt;&lt;<span class="string">&quot;               ####....#.&quot;</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">	<span class="built_in">cout</span>&lt;&lt;<span class="string">&quot;             #..###.....##....&quot;</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">	<span class="built_in">cout</span>&lt;&lt;<span class="string">&quot;             ###.......######              ###            ###&quot;</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">	<span class="built_in">cout</span>&lt;&lt;<span class="string">&quot;                ...........               #...#          #...#&quot;</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">	<span class="built_in">cout</span>&lt;&lt;<span class="string">&quot;               ##*#######                 #.#.#          #.#.#&quot;</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">	<span class="built_in">cout</span>&lt;&lt;<span class="string">&quot;            ####*******######             #.#.#          #.#.#&quot;</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">	<span class="built_in">cout</span>&lt;&lt;<span class="string">&quot;           ...#***.****.*###....          #...#          #...#&quot;</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">	<span class="built_in">cout</span>&lt;&lt;<span class="string">&quot;           ....**********##.....           ###            ###&quot;</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">	<span class="built_in">cout</span>&lt;&lt;<span class="string">&quot;           ....****    *****....&quot;</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">	<span class="built_in">cout</span>&lt;&lt;<span class="string">&quot;             ####        ####&quot;</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">	<span class="built_in">cout</span>&lt;&lt;<span class="string">&quot;           ######        ######&quot;</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">	<span class="built_in">cout</span>&lt;&lt;<span class="string">&quot;##############################################################&quot;</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">	<span class="built_in">cout</span>&lt;&lt;<span class="string">&quot;#...#......#.##...#......#.##...#......#.##------------------#&quot;</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">	<span class="built_in">cout</span>&lt;&lt;<span class="string">&quot;###########################################------------------#&quot;</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">	<span class="built_in">cout</span>&lt;&lt;<span class="string">&quot;#..#....#....##..#....#....##..#....#....#####################&quot;</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">	<span class="built_in">cout</span>&lt;&lt;<span class="string">&quot;##########################################    #----------#&quot;</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">	<span class="built_in">cout</span>&lt;&lt;<span class="string">&quot;#.....#......##.....#......##.....#......#    #----------#&quot;</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">	<span class="built_in">cout</span>&lt;&lt;<span class="string">&quot;##########################################    #----------#&quot;</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">	<span class="built_in">cout</span>&lt;&lt;<span class="string">&quot;#.#..#....#..##.#..#....#..##.#..#....#..#    #----------#&quot;</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">	<span class="built_in">cout</span>&lt;&lt;<span class="string">&quot;##########################################    ############&quot;</span>;</span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure><br>这题我就不写注释了，写了也没人看……</p>
@@ -491,7 +491,7 @@
   </entry>
   <entry>
     <title>P1001 A+B Problem</title>
-    <url>/2021/02/01/P1001A+BProblem/</url>
+    <url>hexo/2021/02/01/P1001A+BProblem/</url>
     <content><![CDATA[<figure class="highlight cpp"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt; //头文件</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;<span class="comment">//命名空间</span></span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span>          <span class="comment">//主函数  </span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">	<span class="keyword">int</span> a,b;        <span class="comment">//int定义a和b</span></span><br><span class="line">	<span class="built_in">cin</span>&gt;&gt;a&gt;&gt;b;      <span class="comment">//输入a和b</span></span><br><span class="line">	<span class="built_in">cout</span>&lt;&lt;a+b&lt;&lt;<span class="built_in">endl</span>;<span class="comment">//利用加号运算符将a和b加在一起并输出、换行</span></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;       <span class="comment">//主函数返回0（表示程序正常运行结束）</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <a id="more"></a>
 <p>最简单的a+b问题，你看懂了吗？</p>
@@ -505,7 +505,7 @@
   </entry>
   <entry>
     <title>2019 CSP-J认证 复赛</title>
-    <url>/2021/02/01/2019CSP-J%E8%AE%A4%E8%AF%81%E5%A4%8D%E8%B5%9B/</url>
+    <url>hexo/2021/02/01/2019CSP-J%E8%AE%A4%E8%AF%81%E5%A4%8D%E8%B5%9B/</url>
     <content><![CDATA[<h4 id="个人信息"><a href="#个人信息" class="headerlink" title="个人信息"></a>个人信息</h4><p>姓名：姚景豪<br>年龄：10岁<br>年级：五年级<br><strong>我是旷课去CSP-J的。</strong></p>
 <a id="more"></a>
 <p>那天，我和好友侯进翔<del>一同</del> 旷课，去到合肥参加认证（you xi）的。开车路上十分漫长，好不容易才到合肥，去参观了赛场，又逛了一个不大不小的公园才回宾馆。</p>
