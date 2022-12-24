@@ -32,7 +32,7 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://img.easyf12.top/images/2022/12/09/63931f0b837ae.png">
 <meta property="article:published_time" content="2022-12-04T19:27:36.000Z">
-<meta property="article:modified_time" content="2022-12-24T09:06:12.284Z">
+<meta property="article:modified_time" content="2022-12-24T09:07:01.355Z">
 <meta property="article:author" content="一蓑烟雨">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://img.easyf12.top/images/2022/12/09/63931f0b837ae.png">
@@ -103,10 +103,10 @@
     <section class='header cmt-title cap theme'>
       快来参与讨论吧
     </section>
-    <section class='body cmt-body twikoo'>
+    <section class='body cmt-body artalk'>
       
 
-<div id="twikoo_container"><svg class="loading" style="vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2709"><path d="M832 512c0-176-144-320-320-320V128c211.2 0 384 172.8 384 384h-64zM192 512c0 176 144 320 320 320v64C300.8 896 128 723.2 128 512h64z" p-id="2710"></path></svg></div>
+<div id="artalk_container"><svg class="loading" style="vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="2709"><path d="M832 512c0-176-144-320-320-320V128c211.2 0 384 172.8 384 384h-64zM192 512c0 176 144 320 320 320v64C300.8 896 128 723.2 128 512h64z" p-id="2710"></path></svg></div>
     </section>
   </div>
 
@@ -278,24 +278,29 @@
 <!-- optional -->
 
   <script>
-    function load_twikoo() {
-        if (!document.querySelectorAll("#twikoo_container")[0]) return;
-        stellar.loadScript('https://cdn1.tianli0.top/npm/twikoo@1.6.7/dist/twikoo.all.min.js', {defer: true}).then(function () {
-            const el = document.getElementById("twikoo_container");
-            var path = el.getAttribute('comment_id');
-            if (!path) {
-                path = decodeURI(window.location.pathname);
-            }
-            twikoo.init(Object.assign({"js":"https://cdn1.tianli0.top/npm/twikoo@1.6.7/dist/twikoo.all.min.js","envId":"https://twikoo.easyf12.top"}, {
-                el: '#twikoo_container',
-                path: path,
-            }));
-        });
-    }
-
-    window.addEventListener('DOMContentLoaded', (event) => {
-        load_twikoo();
-    });
+  function load_artalk() {
+    if (!document.querySelectorAll("#artalk_container")[0]) return;
+    stellar.loadCSS('https://unpkg.com/artalk@2.4.3/dist/Artalk.css');
+    stellar.loadScript('https://unpkg.com/artalk@2.4.3/dist/Artalk.js', {defer: true}).then(function () {
+      const el = document.getElementById("artalk_container");
+      var path = el.getAttribute('comment_id');
+      if (!path) {
+        path = decodeURI(window.location.pathname);
+      }
+      var artalk = new Artalk({
+        el: '#artalk_container',
+        pageKey: path,
+        pageTitle: '关于',
+        server: 'https://artalk.easyf12.top/',
+        placeholder: '',
+        site: '一蓑烟雨的博客',
+        darkMode: 'auto'
+        })
+      });
+  }
+  window.addEventListener('DOMContentLoaded', (event) => {
+    load_artalk();
+  });
 </script>
 
 
