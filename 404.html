@@ -299,13 +299,13 @@
   <script>
     function load_twikoo() {
         if (!document.querySelectorAll("#twikoo_container")[0]) return;
-        stellar.loadScript('https://jsd.onmicrosoft.cn/npm/twikoo@1.6.8/dist/twikoo.all.min.js', {defer: true}).then(function () {
+        stellar.loadScript('https://cdn.jsdelivr.net/gh/zhheo/twikoo@dev/dist/twikoo.all.min.js', {defer: true}).then(function () {
             const el = document.getElementById("twikoo_container");
             var path = el.getAttribute('comment_id');
             if (!path) {
                 path = decodeURI(window.location.pathname);
             }
-            twikoo.init(Object.assign({"js":"https://jsd.onmicrosoft.cn/npm/twikoo@1.6.8/dist/twikoo.all.min.js","envId":"https://twikoo.easyf12.top"}, {
+            twikoo.init(Object.assign({"js":"https://cdn.jsdelivr.net/gh/zhheo/twikoo@dev/dist/twikoo.all.min.js","envId":"https://twikoo.easyf12.top"}, {
                 el: '#twikoo_container',
                 path: path,
             }));
