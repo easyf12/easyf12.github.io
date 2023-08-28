@@ -3,7 +3,7 @@
 
 <head>
   <meta name="generator" content="Hexo 6.3.0">
-  <meta name="hexo-theme" content="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.18.5">
+  <meta name="hexo-theme" content="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.19.0">
   <meta charset="utf-8">
   
 
@@ -32,6 +32,8 @@
 <meta property="og:locale" content="zh_CN">
 <meta property="article:author" content="一蓑烟雨">
 <meta name="twitter:card" content="summary">
+  
+  
   
   
 
@@ -193,6 +195,9 @@
     // 从 butterfly 和 volantis 获得灵感
     loadScript: (src, opt) => new Promise((resolve, reject) => {
       var script = document.createElement('script');
+      if (src.startsWith('/')){
+        src = stellar.config.root + src.substring(1);
+      }
       script.src = src;
       if (opt) {
         for (let key of Object.keys(opt)) {
@@ -231,6 +236,7 @@
       day: '天前',
       month: '个月前',
     },
+    root : '/',
   };
 
   // required plugins (only load if needs)
@@ -270,6 +276,9 @@
   if ('false' == 'true') {
     stellar.plugins.heti = Object.assign({"enable":false,"css":"https://unpkg.com/heti/umd/heti.min.css","js":"https://unpkg.com/heti/umd/heti-addon.min.js"});
   }
+  if ('true' == 'true') {
+    stellar.plugins.copycode = Object.assign({"enable":true,"js":"/js/plugins/copycode.js","default_text":"Copy","success_text":"Copied"});
+  }
 </script>
 
 <!-- required -->
@@ -287,12 +296,5 @@
 
 
   </div>
-  <!-- <script src="https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js"></script>
-  <script>
-      var sf = new Snowflakes({
-          color: "#beccd0"
-      });
-  </script>
-  <script src="https://api.vvhan.com/api/denglong2"></script> -->
 </body>
 </html>

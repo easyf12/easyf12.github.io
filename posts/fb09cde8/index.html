@@ -3,7 +3,7 @@
 
 <head>
   <meta name="generator" content="Hexo 6.3.0">
-  <meta name="hexo-theme" content="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.18.5">
+  <meta name="hexo-theme" content="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.19.0">
   <meta charset="utf-8">
   
 
@@ -31,12 +31,14 @@
 <meta property="og:description" content="细读《艾青诗选》，我想其中有三个关键词：土地、正义、和平。 土地 “为什么我的眼里常含泪水？因为我对这土地爱得深沉……”（《我爱这土地》）  艾青的这句诗想必是妇孺皆知，这也足见他对土地深深的爱。为什么艾青如此深爱这片土地？我想他爱的恐怕不仅仅是土地本身，而是其中蕴含的中华文明的伟大足迹。五千年前，泱泱华夏在东亚这片土地上焕发出了蓬勃生机，而这土地便记录了这千百年来人们辛勤劳作的历史。农民的一滴滴">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-08-28T14:29:07.000Z">
-<meta property="article:modified_time" content="2023-08-28T15:13:04.205Z">
+<meta property="article:modified_time" content="2023-08-28T15:40:41.705Z">
 <meta property="article:author" content="一蓑烟雨">
 <meta property="article:tag" content="《艾青诗选》">
 <meta name="twitter:card" content="summary">
   
   
+  
+  <meta name="keywords" content="《艾青诗选》">
 
   <!-- feed -->
   
@@ -106,6 +108,7 @@
       
 
 
+
 <div class="bread-nav fs12"><div id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a><span class="sep"></span><a class="cap breadcrumb" href="/">文章</a><span class="sep"></span><a class="cap breadcrumb-link" href="/categories/%E8%AF%BB%E5%90%8E%E6%84%9F/">读后感</a></div><div id="post-meta">发布于&nbsp;<time datetime="2023-08-28T14:29:07.000Z">2023-08-28</time></div></div>
 
 <article class='md-text content post'>
@@ -129,6 +132,7 @@
 </blockquote>
 <p>这些文字便表明了，中国的战乱让作者感到极度痛苦、不满。作者的不满便映射了当时全中国人民的低迷、沮丧。因此战争带来的不仅仅是物质上的贫乏，更多的是精神上的打击。这样一来，艾青对和平的期望甚至渴望是不言而喻的。</p>
 <p>为土地，为正义，为和平……艾青为了这些写下了一篇篇动人的诗篇。他对土地的热爱，心中满腔的正义，对和平的殷殷期盼跃然纸上。这样的一份诗集打造出了一个鲜活的、有血有肉的诗人形象，他激励着我们当代青年不断前进。</p>
+
 
 
 <div class="article-footer reveal fs14"><section id="license"><div class="header"><span>许可协议</span></div><div class="body"><p>本文采用 <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">署名-非商业性使用-相同方式共享 4.0 国际</a> 许可协议，转载请注明出处。</p>
@@ -233,6 +237,9 @@
     // 从 butterfly 和 volantis 获得灵感
     loadScript: (src, opt) => new Promise((resolve, reject) => {
       var script = document.createElement('script');
+      if (src.startsWith('/')){
+        src = stellar.config.root + src.substring(1);
+      }
       script.src = src;
       if (opt) {
         for (let key of Object.keys(opt)) {
@@ -271,6 +278,7 @@
       day: '天前',
       month: '个月前',
     },
+    root : '/',
   };
 
   // required plugins (only load if needs)
@@ -309,6 +317,9 @@
   }
   if ('false' == 'true') {
     stellar.plugins.heti = Object.assign({"enable":false,"css":"https://unpkg.com/heti/umd/heti.min.css","js":"https://unpkg.com/heti/umd/heti-addon.min.js"});
+  }
+  if ('true' == 'true') {
+    stellar.plugins.copycode = Object.assign({"enable":true,"js":"/js/plugins/copycode.js","default_text":"Copy","success_text":"Copied"});
   }
 </script>
 
@@ -353,12 +364,5 @@
 
 
   </div>
-  <!-- <script src="https://unpkg.com/magic-snowflakes/dist/snowflakes.min.js"></script>
-  <script>
-      var sf = new Snowflakes({
-          color: "#beccd0"
-      });
-  </script>
-  <script src="https://api.vvhan.com/api/denglong2"></script> -->
 </body>
 </html>
