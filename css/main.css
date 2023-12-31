@@ -3014,6 +3014,7 @@ details.folding[child=iframe] >div.body {
   border-radius: 12px;
   background: var(--theme-block);
   border: 1px solid var(--theme-border);
+  border: 1px solid var(--theme-border);
   overflow: hidden;
   color: var(--text-p1);
   line-height: 1.5;
@@ -5365,7 +5366,7 @@ h1.article-title {
   left: 0;
   right: 0;
   height: 1px;
-  opacity: 0;
+  opacity: 0.8;
   background: var(--theme-link);
   transition: all 0.2s ease-out;
   -moz-transition: all 0.2s ease-out;
