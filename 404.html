@@ -266,8 +266,8 @@
   <script>
   function load_artalk() {
     if (!document.querySelectorAll("#artalk_container")[0]) return;
-    stellar.loadCSS('https://cdn.staticfile.org/artalk/2.8.3/Artalk.css');
-    stellar.loadScript('https://cdn.staticfile.org/artalk/2.8.3/Artalk.js', {defer: true}).then(function () {
+    stellar.loadCSS('https://cdn.staticfile.org/artalk/2.8.7/Artalk.css');
+    stellar.loadScript('https://cdn.staticfile.org/artalk/2.8.7/Artalk.js', {defer: true}).then(function () {
       const el = document.getElementById("artalk_container");
       var path = el.getAttribute('comment_id');
       if (!path) {
